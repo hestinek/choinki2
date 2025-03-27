@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,45 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+                forest: {
+                    50: '#f3f8f3',
+                    100: '#e5f0e5',
+                    200: '#cce0cd',
+                    300: '#a3c7a5',
+                    400: '#75a778',
+                    500: '#538a56',
+                    600: '#3e7042',
+                    700: '#335937',
+                    800: '#2c4930',
+                    900: '#263c29',
+                    950: '#122113',
+                },
+                earth: {
+                    50: '#f9f6f3',
+                    100: '#f1ece5',
+                    200: '#e2d6ca',
+                    300: '#d0baa6',
+                    400: '#b99981',
+                    500: '#aa8269',
+                    600: '#9a715a',
+                    700: '#805c4b',
+                    800: '#6a4c40',
+                    900: '#5a4037',
+                    950: '#302119',
+                },
+                gold: {
+                    50: '#fbf9eb',
+                    100: '#f7f1cc',
+                    200: '#f0e399',
+                    300: '#e8cf5e',
+                    400: '#e2bd33',
+                    500: '#d3a41e',
+                    600: '#bd8218',
+                    700: '#9d6017',
+                    800: '#834c1b',
+                    900: '#6f3f1a',
+                    950: '#412009',
+                },
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -70,26 +100,50 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
-				}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+                'fade-in': {
+                    '0%': { opacity: '0', transform: 'translateY(10px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' }
+                },
+                'fade-in-right': {
+                    '0%': { opacity: '0', transform: 'translateX(20px)' },
+                    '100%': { opacity: '1', transform: 'translateX(0)' }
+                },
+                'fade-in-left': {
+                    '0%': { opacity: '0', transform: 'translateX(-20px)' },
+                    '100%': { opacity: '1', transform: 'translateX(0)' }
+                },
+                'scale-in': {
+                    '0%': { opacity: '0', transform: 'scale(0.95)' },
+                    '100%': { opacity: '1', transform: 'scale(1)' }
+                },
+                'float': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.7s ease-out forwards',
+                'fade-in-delay-1': 'fade-in 0.7s ease-out 0.2s forwards',
+                'fade-in-delay-2': 'fade-in 0.7s ease-out 0.4s forwards',
+                'fade-in-delay-3': 'fade-in 0.7s ease-out 0.6s forwards',
+                'fade-in-right': 'fade-in-right 0.7s ease-out forwards',
+                'fade-in-left': 'fade-in-left 0.7s ease-out forwards',
+                'scale-in': 'scale-in 0.7s ease-out forwards',
+                'float': 'float 6s ease-in-out infinite'
+			},
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+                serif: ['Playfair Display', 'serif'],
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
