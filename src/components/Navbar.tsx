@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-gray-200/80 backdrop-blur-sm shadow-sm ${isScrolled ? 'py-4' : 'py-6'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-gray-200/40 backdrop-blur-sm shadow-sm ${isScrolled ? 'py-4' : 'py-6'}`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <a href="#" className="font-serif text-2xl font-bold text-forest-800 flex items-center">
           Natura<span className="text-forest-600">Green</span>
@@ -47,7 +47,7 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-gray-200/90 backdrop-blur-sm absolute top-full left-0 w-full shadow-md px-6 py-4 flex flex-col space-y-4">
+        <div className="md:hidden bg-gray-200/40 backdrop-blur-sm absolute top-full left-0 w-full shadow-md px-6 py-4 flex flex-col space-y-4">
           {['Strona główna', 'Odmiany', 'O nas', 'Sezony', 'Kontakt'].map((item) => (
             <a 
               key={item} 
