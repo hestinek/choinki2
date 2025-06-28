@@ -7,13 +7,13 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="w-full h-full bg-[url('https://images.unsplash.com/photo-1513836279014-a89f7a76ae86')] bg-cover bg-center"
-          style={{ filter: 'brightness(0.85)' }}
+          className="w-full h-full bg-[url('https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9')] bg-cover bg-center"
+          style={{ filter: 'brightness(0.75)' }}
         />
       </div>
       
-      {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-forest-950/30 to-forest-950/60 z-10" />
+      {/* Overlay Gradient - lighter at top for navbar visibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-forest-950/40 to-forest-950/70 z-10" />
       
       {/* Content */}
       <div className="container mx-auto px-6 md:px-12 relative z-20 text-center">
