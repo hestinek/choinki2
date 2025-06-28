@@ -25,9 +25,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-medium text-forest-800 text-lg">Adres plantacji</h3>
                 <p className="text-forest-700 mt-1">
-                  ul. Leśna 123<br />
-                  05-600 Zielonka<br />
-                  woj. mazowieckie
+                  Sołdany 28<br />
+                  11-500 Sołdany<br />
+                  woj. Warmińsko-Mazurskie
                 </p>
               </div>
             </div>
@@ -39,7 +39,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-medium text-forest-800 text-lg">Telefon</h3>
                 <p className="text-forest-700 mt-1">
-                  +48 123 456 789
+                  +48 796 214 778
                 </p>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-medium text-forest-800 text-lg">Email</h3>
                 <p className="text-forest-700 mt-1">
-                  kontakt@naturagreen.pl
+                  plantacjasoldany@gmail.com
                 </p>
               </div>
             </div>
@@ -63,107 +63,41 @@ const Contact = () => {
               <div>
                 <h3 className="font-medium text-forest-800 text-lg">Godziny otwarcia</h3>
                 <p className="text-forest-700 mt-1">
-                  Poniedziałek - Sobota: 9:00 - 18:00<br />
-                  Niedziela: 10:00 - 16:00
+                  Poza sezonem świątecznym:<br />
+                  Poniedziałek - Niedziela: 9:00 - 16:00
                 </p>
-                <p className="text-forest-500 text-sm italic mt-1">
-                  * Godziny w sezonie świątecznym (1-24 grudnia)
+                <p className="text-forest-700 mt-2">
+                  Sezon świąteczny (1-24 grudnia):<br />
+                  Poniedziałek - Niedziela: 8:00 - 17:00
                 </p>
               </div>
             </div>
           </div>
         </div>
         
-        {/* Contact Form */}
+        {/* Google Maps */}
         <div className="bg-white rounded-xl shadow-md p-8 opacity-0 animate-fade-in-delay-1">
           <h3 className="text-2xl font-bold text-forest-800 font-serif mb-6">
-            Wyślij wiadomość
+            Jak do nas dojechać
           </h3>
           
-          <form className="space-y-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-forest-700 mb-1">
-                  Imię i nazwisko
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-3 rounded-lg border border-forest-200 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition-all"
-                  placeholder="Jan Kowalski"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-forest-700 mb-1">
-                  Adres email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 rounded-lg border border-forest-200 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition-all"
-                  placeholder="jan@example.com"
-                />
-              </div>
-            </div>
-            
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-forest-700 mb-1">
-                Numer telefonu
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                className="w-full px-4 py-3 rounded-lg border border-forest-200 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition-all"
-                placeholder="+48 123 456 789"
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-forest-700 mb-1">
-                Temat wiadomości
-              </label>
-              <select
-                id="subject"
-                className="w-full px-4 py-3 rounded-lg border border-forest-200 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition-all"
-              >
-                <option value="order">Zamówienie choinki</option>
-                <option value="info">Zapytanie o produkt</option>
-                <option value="visit">Wizyta na plantacji</option>
-                <option value="other">Inne</option>
-              </select>
-            </div>
-            
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-forest-700 mb-1">
-                Wiadomość
-              </label>
-              <textarea
-                id="message"
-                rows={4}
-                className="w-full px-4 py-3 rounded-lg border border-forest-200 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition-all"
-                placeholder="Twoja wiadomość..."
-              ></textarea>
-            </div>
-            
-            <div className="flex items-center">
-              <input
-                type="checkbox"
-                id="privacy"
-                className="w-4 h-4 text-forest-600 border-forest-300 rounded focus:ring-forest-500"
-              />
-              <label htmlFor="privacy" className="ml-2 text-sm text-forest-700">
-                Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na moje zapytanie.
-              </label>
-            </div>
-            
-            <button
-              type="submit"
-              className="w-full btn-primary"
-            >
-              Wyślij wiadomość
-            </button>
-          </form>
+          <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.123456789!2d21.234567!3d54.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSo%C5%82dany+28%2C+11-500+So%C5%82dany!5e0!3m2!1spl!2spl!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Mapa dojazdu do plantacji choinek"
+            ></iframe>
+          </div>
+          
+          <p className="mt-4 text-forest-600 text-sm">
+            Nasza plantacja znajduje się w malowniczej miejscowości Sołdany. 
+            Dojazd jest możliwy zarówno samochodem osobowym, jak i większym pojazdem.
+          </p>
         </div>
       </div>
     </section>
