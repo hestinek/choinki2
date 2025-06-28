@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="font-serif text-2xl font-bold text-white mb-6 flex items-center">
-              Natura<span className="text-forest-400">Green</span>
+              Choinki<span className="text-forest-400">Giżycko</span>
             </h3>
             <p className="text-forest-200 mb-6">
               Rodzinna plantacja choinek z tradycjami. Oferujemy najwyższej jakości 
@@ -51,18 +51,18 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-forest-400 mt-1" />
                 <span className="text-forest-200">
-                  ul. Leśna 123<br />
-                  05-600 Zielonka<br />
-                  woj. mazowieckie
+                  Sołdany 28<br />
+                  11-500 Sołdany<br />
+                  woj. Warmińsko-Mazurskie
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-forest-400" />
-                <span className="text-forest-200">+48 123 456 789</span>
+                <span className="text-forest-200">+48 796 214 778</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-forest-400" />
-                <span className="text-forest-200">kontakt@naturagreen.pl</span>
+                <span className="text-forest-200">plantacjasoldany@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -72,14 +72,11 @@ const Footer = () => {
             <h4 className="text-xl font-semibold text-white mb-6 font-serif">Godziny otwarcia</h4>
             <p className="text-forest-200 mb-2">Poza sezonem świątecznym:</p>
             <p className="text-forest-200 mb-4">
-              Poniedziałek - Piątek: 9:00 - 17:00<br />
-              Sobota: 10:00 - 15:00<br />
-              Niedziela: Zamknięte
+              Poniedziałek - Niedziela: 9:00 - 16:00
             </p>
             <p className="text-forest-200 mb-2">Sezon świąteczny (1-24 grudnia):</p>
             <p className="text-forest-200">
-              Poniedziałek - Sobota: 9:00 - 18:00<br />
-              Niedziela: 10:00 - 16:00
+              Poniedziałek - Niedziela: 8:00 - 17:00
             </p>
           </div>
         </div>
@@ -87,7 +84,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-forest-800 py-6 text-center text-forest-400 text-sm">
           <p>
-            &copy; {currentYear} NaturaGreen - Plantacja Choinek. Wszelkie prawa zastrzeżone.
+            &copy; {currentYear} Choinki Giżycko - Plantacja Choinek. Wszelkie prawa zastrzeżone.
           </p>
         </div>
       </div>
