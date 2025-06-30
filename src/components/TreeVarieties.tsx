@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const treeVarieties = [
@@ -14,7 +13,7 @@ const treeVarieties = [
     id: 2,
     name: 'Świerk w donicy',
     description: 'Praktyczne rozwiązanie dla osób ceniących ekologię. Po świętach można posadzić w ogrodzie.',
-    height: '50cm - 120cm',
+    height: '100cm - 170cm',
     characteristics: ['Możliwość posadzenia po świętach', 'Zachowana świeżość', 'Ekologiczny wybór'],
     image: '/lovable-uploads/6ca30e93-1b8b-411a-87a7-521e5f9c140a.png'
   },
@@ -56,7 +55,7 @@ const TreeVarieties = () => {
               <img 
                 src={tree.image} 
                 alt={tree.name} 
-                className="w-full h-full object-contain transition-transform duration-500 hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
             </div>
             <div className="p-6">
