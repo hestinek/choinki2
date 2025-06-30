@@ -7,27 +7,24 @@ const treeVarieties = [
     name: 'Świerk pospolity',
     description: 'Klasyczny wybór. Intensywny zapach, gęste gałęzie i tradycyjny wygląd.',
     height: '1.5m - 3m',
-    price: 'od 120 zł',
     characteristics: ['Intensywny zapach', 'Gęste igły', 'Krótsza trwałość'],
-    image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22'
+    image: '/lovable-uploads/5fcd4a52-d9bf-4cf6-94bd-bb4574290e3d.png'
   },
   {
     id: 2,
-    name: 'Jodła kaukaska',
-    description: 'Elegancka choinka o regularnym kształcie, długich igłach i wyjątkowej trwałości.',
-    height: '1.8m - 3.5m',
-    price: 'od 200 zł',
-    characteristics: ['Delikatny zapach', 'Długie igły', 'Najdłuższa trwałość'],
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb'
+    name: 'Świerk w donicy',
+    description: 'Praktyczne rozwiązanie dla osób ceniących ekologię. Po świętach można posadzić w ogrodzie.',
+    height: '50cm - 120cm',
+    characteristics: ['Możliwość posadzenia po świętach', 'Łatwy transport', 'Ekologiczny wybór'],
+    image: '/lovable-uploads/6ca30e93-1b8b-411a-87a7-521e5f9c140a.png'
   },
   {
     id: 3,
     name: 'Świerk srebrny',
     description: 'Wyjątkowy niebieskawy odcień igieł, sztywne gałęzie, idealny do ciężkich ozdób.',
     height: '1.5m - 3m',
-    price: 'od 160 zł',
     characteristics: ['Subtelny zapach', 'Srebrzyste igły', 'Dobra trwałość'],
-    image: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9'
+    image: '/lovable-uploads/57dda738-0b4f-42a7-9e01-86960103fda2.png'
   }
 ];
 
@@ -69,7 +66,6 @@ const TreeVarieties = () => {
               <div className="mt-4 flex justify-between items-center">
                 <div>
                   <p className="text-sm text-forest-600">Wysokość: {tree.height}</p>
-                  <p className="font-semibold text-forest-800">{tree.price}</p>
                 </div>
                 <button 
                   className="text-forest-600 hover:text-forest-800 font-medium text-sm"
