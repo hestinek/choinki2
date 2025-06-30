@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 
 const treeVarieties = [
@@ -51,7 +52,7 @@ const TreeVarieties = () => {
               index === 0 ? 'animate-fade-in' : index === 1 ? 'animate-fade-in-delay-1' : 'animate-fade-in-delay-2'
             }`}
           >
-            <div className="h-56 overflow-hidden">
+            <div className="h-80 overflow-hidden">
               <img 
                 src={tree.image} 
                 alt={tree.name} 
