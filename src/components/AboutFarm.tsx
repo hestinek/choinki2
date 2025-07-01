@@ -10,6 +10,9 @@ const AboutFarm = () => {
               src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
               alt="Nasza plantacja choinek"
               className="w-full h-[500px] object-cover"
+              loading="lazy"
+              width="600"
+              height="500"
             />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg w-full max-w-xs opacity-0 animate-fade-in-delay-2">
@@ -27,16 +30,13 @@ const AboutFarm = () => {
           
           <div className="mt-6 space-y-4 text-forest-700">
             <p>
-              Nasza rodzinna plantacja choinek to miejsce, gdzie z miłością i pasją uprawiamy drzewka,
-              które stają się sercem Waszych domów podczas świątecznego okresu.
+              Nasza rodzinna Plantacja Choinek Soldany, położona w malowniczych okolicach Giżycka, to miejsce, gdzie z pasją i zaangażowaniem uprawiamy najwyższej jakości choinki. Specjalizujemy się przede wszystkim w gatunku świerka, który od lat cieszy się ogromnym uznaniem wśród naszych klientów.
             </p>
             <p>
-              Położona w malowniczym regionie, nasza plantacja obejmuje ponad 20 hektarów terenów
-              uprawnych, gdzie w zgodzie z naturą hodujemy różne gatunki drzewek świątecznych.
+              Na ponad 20 hektarach terenów uprawnych prowadzimy hodowlę w zgodzie z naturą, stosując ekologiczne metody uprawy i ograniczając do minimum użycie sztucznych nawozów oraz środków ochrony roślin. Dzięki temu nasze choinki wyróżniają się pięknymi, intensywnymi barwami i klasycznym stożkowym kształtem.
             </p>
             <p>
-              Stawiamy na ekologiczne metody uprawy, ograniczając do minimum stosowanie sztucznych
-              nawozów i środków ochrony roślin. Dzięki temu nasze choinki są nie tylko piękne, ale też bezpieczne dla Twojej rodziny.
+              Oferujemy zarówno sprzedaż hurtową, jak i sprzedaż detaliczną naszych choinek w Giżycku i okolicach. Zapraszamy do współpracy klientów indywidualnych, firmy oraz hurtownie zainteresowane zakupem wysokiej jakości świerków z naszej plantacji Soldany.
             </p>
           </div>
           

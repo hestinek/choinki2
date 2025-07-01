@@ -57,6 +57,9 @@ const TreeVarieties = () => {
                 src={tree.image} 
                 alt={tree.name} 
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                loading="lazy"
+                width="400"
+                height="320"
               />
             </div>
             <div className="p-6">

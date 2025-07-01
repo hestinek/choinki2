@@ -6,12 +6,14 @@ const Hero = () => {
     <section id="strona-główna" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="w-full h-full bg-cover bg-center"
-          style={{ 
-            backgroundImage: 'url(/lovable-uploads/b75bda7b-ee26-4295-90c5-881448864d70.png)',
-            filter: 'brightness(0.75)' 
-          }}
+        <img
+          src="/lovable-uploads/b75bda7b-ee26-4295-90c5-881448864d70.png"
+          alt="Plantacja choinek"
+          className="w-full h-full object-cover"
+          style={{ filter: 'brightness(0.75)' }}
+          loading="eager"
+          width="1920"
+          height="1080"
         />
       </div>
       
