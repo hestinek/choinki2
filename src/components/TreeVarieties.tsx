@@ -4,7 +4,7 @@ const treeVarieties = [{
   name: 'Świerk pospolity',
   description: 'Klasyczny wybór. Intensywny zapach, gęste gałęzie i tradycyjny wygląd.',
   height: '1.5m - 3m',
-  characteristics: ['Intensywny zapach', 'Gęste igły', 'Krótsza trwałość'],
+  characteristics: ['Intensywny zapach', 'Gęste igły', 'Klasyka świąt'],
   image: '/lovable-uploads/5fcd4a52-d9bf-4cf6-94bd-bb4574290e3d.png'
 }, {
   id: 2,
