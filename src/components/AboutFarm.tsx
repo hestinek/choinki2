@@ -1,19 +1,10 @@
-
 const AboutFarm = () => {
-  return (
-    <section id="o-nas" className="section-padding">
+  return <section id="o-nas" className="section-padding">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Image */}
         <div className="relative opacity-0 animate-fade-in-left">
           <div className="rounded-2xl overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
-              alt="Nasza plantacja choinek"
-              className="w-full h-[500px] object-cover"
-              loading="lazy"
-              width="600"
-              height="500"
-            />
+            <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86" alt="Nasza plantacja choinek" className="w-full h-[500px] object-cover" loading="lazy" width="600" height="500" />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg w-full max-w-xs opacity-0 animate-fade-in-delay-2">
             <p className="text-forest-600 font-serif text-xl">20+ lat</p>
@@ -29,33 +20,32 @@ const AboutFarm = () => {
           </h2>
           
           <div className="mt-6 space-y-4 text-forest-700">
-            <p>
+            <p className="text-justify font-normal">
               Nasza rodzinna Plantacja Choinek Soldany, położona w malowniczych okolicach Giżycka, to miejsce, gdzie z pasją i zaangażowaniem uprawiamy najwyższej jakości choinki. Specjalizujemy się przede wszystkim w gatunku świerka, który od lat cieszy się ogromnym uznaniem wśród naszych klientów.
             </p>
-            <p>
+            <p className="text-justify">
               Na ponad 20 hektarach terenów uprawnych prowadzimy hodowlę w zgodzie z naturą, stosując ekologiczne metody uprawy i ograniczając do minimum użycie sztucznych nawozów oraz środków ochrony roślin. Dzięki temu nasze choinki wyróżniają się pięknymi, intensywnymi barwami i klasycznym stożkowym kształtem.
             </p>
-            <p>
-              Oferujemy zarówno sprzedaż hurtową, jak i sprzedaż detaliczną naszych choinek w Giżycku i okolicach. Zapraszamy do współpracy klientów indywidualnych, firmy oraz hurtownie zainteresowane zakupem wysokiej jakości świerków z naszej plantacji Soldany.
-            </p>
+            <p className="text-justify">Oferujemy zarówno sprzedaż hurtową, jak i sprzedaż detaliczną naszych choinek bezpośrednio z plantacji oraz na naszym stoisku pod sklepem Szklanka (Wodociągowa 9b) w Giżycku. Zapraszamy do współpracy klientów indywidualnych, firmy oraz hurtownie zainteresowane zakupem wysokiej jakości świerków z naszej plantacji Soldany.</p>
           </div>
           
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {[
-              { figure: '20+', label: 'Hektarów upraw' },
-              { figure: '3', label: 'Odmiany choinek' },
-              { figure: '1000+', label: 'Zadowolonych klientów rocznie' }
-            ].map((stat, index) => (
-              <div key={index} className="bg-forest-50 p-4 rounded-lg text-center">
+            {[{
+            figure: '20+',
+            label: 'Hektarów upraw'
+          }, {
+            figure: '3',
+            label: 'Odmiany choinek'
+          }, {
+            figure: '1000+',
+            label: 'Zadowolonych klientów rocznie'
+          }].map((stat, index) => <div key={index} className="bg-forest-50 p-4 rounded-lg text-center">
                 <p className="text-2xl font-bold text-forest-700 font-serif">{stat.figure}</p>
                 <p className="text-forest-600 text-sm">{stat.label}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutFarm;
