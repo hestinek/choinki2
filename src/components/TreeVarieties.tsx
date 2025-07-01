@@ -9,7 +9,7 @@ const treeVarieties = [{
 }, {
   id: 2,
   name: 'Świerk w donicy',
-  description: 'Praktyczne rozwiązanie dla osób ceniących ekologię. Po świętach można posadzić w ogrodzie.',
+  description: 'Praktyczne rozwiązanie dla osób ceniących ekologię. Po świętach idealna do ogrodu.',
   height: '100cm - 170cm',
   characteristics: ['Możliwość posadzenia po świętach', 'Zachowana świeżość', 'Ekologiczny wybór'],
   image: '/lovable-uploads/6ca30e93-1b8b-411a-87a7-521e5f9c140a.png'
