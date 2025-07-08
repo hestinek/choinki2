@@ -67,7 +67,7 @@ const Contact = () => {
                   Poniedziałek - Niedziela: 9:00 - 16:00
                 </p>
                 <p className="text-forest-700 mt-2">
-                  Sezon świąteczny (1-24 grudnia):<br />
+                  Sezon świąteczny (1-23 grudnia):<br />
                   Poniedziałek - Niedziela: 8:00 - 17:00
                 </p>
               </div>
@@ -95,15 +95,15 @@ const Contact = () => {
           </div>
           
           <div className="mt-4 text-forest-600 text-sm space-y-3">
-            <p>
+            <p className="text-justify">
               📍 <strong>Lokalizacja Plantacji Choinek Soldany</strong><br />
-              Nasza Plantacja Choinek Soldany mieści się w malowniczej miejscowości Sołdany, zaledwie kilka kilometrów od Giżycka, w sercu województwa warmińsko-mazurskiego. To idealne miejsce dla wszystkich, którzy szukają świeżych, ekologicznych choinek z własnej uprawy w okolicach Giżycka.
+              Nasza <strong>Plantacja Choinek Soldany</strong> mieści się w malowniczej miejscowości Sołdany, zaledwie kilka kilometrów od <strong>Giżycka</strong>, w sercu województwa warmińsko-mazurskiego. To idealne miejsce dla wszystkich, którzy szukają <strong>świeżych, ekologicznych choinek z własnej uprawy</strong> w okolicach Giżycka.
             </p>
-            <p>
+            <p className="text-justify">
               🚗 <strong>Łatwy dojazd do plantacji</strong><br />
               Do naszej plantacji dojedziesz bez problemu zarówno samochodem osobowym, jak i większym pojazdem dostawczym. Droga dojazdowa jest asfaltowa, co umożliwia sprawny odbiór choinek – zarówno dla klientów detalicznych, jak i hurtowych.
             </p>
-            <p>
+            <p className="text-justify">
               🎄 <strong>Zaplanuj swoją wizytę i wybierz choinkę prosto z plantacji</strong><br />
               Kliknij na mapę, aby uzyskać wskazówki dojazdu i odwiedź nas osobiście. Jesteśmy otwarci w sezonie przedświątecznym oraz przez cały rok dla klientów poszukujących drzewek z systemem korzeniowym.
             </p>

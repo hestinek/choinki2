@@ -21,22 +21,25 @@ const AboutFarm = () => {
           
           <div className="mt-6 space-y-4 text-forest-700">
             <p className="text-justify font-normal">
-              Nasza rodzinna Plantacja Choinek Soldany, położona w malowniczych okolicach Giżycka na Mazurach, to miejsce, gdzie z pasją i zaangażowaniem uprawiamy najwyższej jakości choinki. Specjalizujemy się przede wszystkim w gatunku świerka, który od lat cieszy się ogromnym uznaniem wśród naszych klientów.
+              Nasza rodzinna <strong>Plantacja Choinek Soldany</strong>, położona w malowniczych <strong>okolicach Giżycka na Mazurach</strong>, to miejsce, gdzie z pasją i zaangażowaniem uprawiamy najwyższej jakości choinki. Specjalizujemy się przede wszystkim w gatunku świerka, który od lat cieszy się ogromnym uznaniem wśród naszych klientów.
             </p>
             <p className="text-justify">
-              Na ponad 15 hektarach terenów uprawnych prowadzimy hodowlę w zgodzie z naturą, stosując ekologiczne metody uprawy i ograniczając do minimum użycie sztucznych nawozów oraz środków ochrony roślin. Dzięki temu nasze choinki wyróżniają się pięknymi, intensywnymi barwami i klasycznym stożkowym kształtem.
+              Na ponad 15 hektarach terenów uprawnych prowadzimy hodowlę w zgodzie z naturą, stosując ekologiczne metody uprawy i ograniczając do minimum użycie sztucznych nawozów oraz środków ochrony roślin. Dzięki temu nasze <strong>choinki wyróżniają się pięknymi, intensywnymi barwami i klasycznym stożkowym kształtem</strong>.
             </p>
-            <p className="text-justify">Oferujemy sprzedaż choinek ciętych oraz w donicach z całym systemem korzeniowym– idealnych na święta Bożego Narodzenia, do biur, ogrodów, domów i przestrzeni komercyjnych. Obsługujemy zarówno klientów indywidualnych, jak i firmy oraz dystrybutorów.</p>
-            <p className="text-justify">Odwiedź naszą plantację lub punkt sprzedaży w Giżycku i wybierz swoją idealną choinkę prosto od polskiego producenta!</p>
+            <p className="text-justify">Oferujemy <strong>sprzedaż choinek ciętych oraz w donicach</strong> z całym systemem korzeniowym – idealnych na święta Bożego Narodzenia, do biur, ogrodów, domów i przestrzeni komercyjnych. Obsługujemy zarówno klientów indywidualnych, jak i firmy oraz dystrybutorów.</p>
+            <p className="text-justify">Odwiedź naszą plantację lub punkt sprzedaży w <strong>Giżycku</strong> i wybierz swoją idealną choinkę prosto od polskiego producenta!</p>
           </div>
           
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[{
             figure: '15+',
             label: 'lat doświadczenia w uprawie choinek'
           }, {
             figure: '3',
             label: 'Warianty choinek'
+          }, {
+            figure: '1000+',
+            label: 'Zadowolonych klientów'
           }].map((stat, index) => <div key={index} className="bg-forest-50 p-4 rounded-lg text-center">
                 <p className="text-2xl font-bold text-forest-700 font-serif">{stat.figure}</p>
                 <p className="text-forest-600 text-sm">{stat.label}</p>

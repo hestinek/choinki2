@@ -9,7 +9,7 @@ const seasonTimeline = [
 ];
 
 const perks = [
-  "Możliwość samodzielnego wyboru drzewka na plantacji",
+  "Możliwość samodzielnego wyboru oraz ścięcia drzewka na plantacji",
   "Profesjonalne cięcie dostosowane do Twoich potrzeb",
   "Świeże drzewka, ścięte maksymalnie 48h przed odbiorem",
   "Pakowanie i zabezpieczenie choinki na czas transportu",
@@ -83,7 +83,7 @@ const SeasonalInfo = () => {
                   <span className="mt-1 text-forest-600">
                     <Check size={18} />
                   </span>
-                  <span className="text-forest-700">{perk}</span>
+                  <span className="text-forest-700 text-justify">{perk}</span>
                 </li>
               ))}
             </ul>
@@ -91,15 +91,13 @@ const SeasonalInfo = () => {
           
           <div className="bg-forest-50 p-6 rounded-lg">
             <h4 className="text-lg font-semibold text-forest-800 font-serif mb-3">Odbiór osobisty</h4>
-            <p className="text-forest-700 mb-4">
-              W grudniu zapraszamy do odwiedzenia naszej plantacji. To doskonała okazja, by spędzić 
-              rodzinny dzień wybierając idealną choinkę i cieszyć się świąteczną atmosferą.
+            <p className="text-forest-700 mb-4 text-justify">
+              W grudniu zapraszamy do odwiedzenia naszej plantacji całymi rodzinami wraz z 4 nożnymi przyjaciółmi. To doskonała okazja, by spędzić rodzinny dzień wybierając idealną choinkę i cieszyć się świąteczną atmosferą oraz mazurską naturą!
             </p>
             <p className="text-forest-800 font-medium">
-              Godziny otwarcia w sezonie świątecznym:
+              Godziny otwarcia w sezonie świątecznym (1-23 grudnia):
             </p>
-            <p className="text-forest-700">Poniedziałek - Sobota: 9:00 - 18:00</p>
-            <p className="text-forest-700">Niedziela: 10:00 - 16:00</p>
+            <p className="text-forest-700">Poniedziałek - Niedziela: 8:00 - 17:00</p>
           </div>
         </div>
       </div>
