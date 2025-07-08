@@ -29,10 +29,7 @@ const TreeVarieties = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-fade-in-delay-1">
           Wybierz idealną choinkę
         </h2>
-        <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">
-          Każda z naszych choinek jest starannie pielęgnowana, aby zapewnić najwyższą jakość 
-          i wyjątkowe doznania w Twoim domu podczas świąt.
-        </p>
+        <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">Każda z naszych choinek jest starannie pielęgnowana, aby zapewnić najwyższą jakość i wyjątkowe doznania w Twoim domu podczas świąt. Drzewka wycinamy przy klientach!</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
