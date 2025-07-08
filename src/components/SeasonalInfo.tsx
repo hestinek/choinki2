@@ -2,8 +2,8 @@
 import { Calendar, Check } from 'lucide-react';
 
 const seasonTimeline = [
-  { month: "Marzec - Kwiecień", activity: "Przygotowanie gleby i sadzenie nowych drzewek", icon: "🌱" },
-  { month: "Maj - Sierpień", activity: "Pielęgnacja, przycinanie i kształtowanie drzewek", icon: "✂️" },
+  { month: "Marzec - Kwiecień", activity: "Pielęgnacja, przycinanie i kształtowanie drzewek", icon: "🌱" },
+  { month: "Maj - Sierpień", activity: "Pielęgnacja i nawożenie drzewek", icon: "✂️" },
   { month: "Wrzesień - Listopad", activity: "Przygotowanie do sezonu świątecznego", icon: "🍂" },
   { month: "Grudzień", activity: "Główny sezon sprzedaży choinek na święta", icon: "🎄" },
 ];

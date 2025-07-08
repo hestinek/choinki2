@@ -14,14 +14,13 @@ const Footer = () => {
               Choinki<span className="text-forest-400">Giżycko</span>
             </h3>
             <p className="text-forest-200 mb-6">
-              Rodzinna plantacja choinek z tradycjami. Oferujemy najwyższej jakości 
-              naturalne drzewka świąteczne, hodowane z poszanowaniem środowiska.
+              Rodzinna plantacja choinek z tradycjami. Oferujemy najwyższej jakości świerki pospolite, srebrne oraz w donicach. Hodowane w Mazurskiej miejscowości Sołdany koło Giżycka.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-forest-400 transition-colors">
+              <a href="https://www.facebook.com/plantacjasoldany/?locale=pl_PL" className="text-white hover:text-forest-400 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-white hover:text-forest-400 transition-colors">
+              <a href="https://www.instagram.com/plantacja.soldany/?hl=en-gb" className="text-white hover:text-forest-400 transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
@@ -84,7 +83,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-forest-800 py-6 text-center text-forest-400 text-sm">
           <p>
-            &copy; {currentYear} Choinki Giżycko - Plantacja Choinek. Wszelkie prawa zastrzeżone.
+            &copy; {currentYear} Choinki Giżycko - Plantacja Choinek Soldany. Wszelkie prawa zastrzeżone. Polityka prywatności
           </p>
         </div>
       </div>

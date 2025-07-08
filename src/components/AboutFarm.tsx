@@ -33,7 +33,7 @@ const AboutFarm = () => {
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[{
             figure: '15+',
-            label: 'lat doświadczenia w uprawie choinek'
+            label: 'Hektarów choinek'
           }, {
             figure: '3',
             label: 'Warianty choinek'
