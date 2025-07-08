@@ -2,9 +2,9 @@ import { useState } from 'react';
 const treeVarieties = [{
   id: 1,
   name: 'Świerk pospolity',
-  description: 'Klasyczny wybór. Intensywny zapach, gęste gałęzie i tradycyjny wygląd.',
+  description: 'Kwintesencja polskich świąt. Intensywny zapach, gęste gałęzie i tradycyjny wygląd.',
   height: '1.5m - 3m',
-  characteristics: ['Intensywny zapach', 'Gęste igły', 'Klasyka świąt'],
+  characteristics: ['Intensywny zapach', 'Gęste igły', 'Klasyczny wybór'],
   image: '/lovable-uploads/5fcd4a52-d9bf-4cf6-94bd-bb4574290e3d.png'
 }, {
   id: 2,
@@ -18,7 +18,7 @@ const treeVarieties = [{
   name: 'Świerk srebrny',
   description: 'Wyjątkowy niebieskawy odcień igieł, sztywne gałęzie, idealny do ciężkich ozdób.',
   height: '1.5m - 3m',
-  characteristics: ['Subtelny zapach', 'Srebrzyste igły', 'Dobra trwałość'],
+  characteristics: ['Subtelny zapach', 'Srebrzyste igły', 'Większa trwałość'],
   image: '/lovable-uploads/57dda738-0b4f-42a7-9e01-86960103fda2.png'
 }];
 const TreeVarieties = () => {
@@ -29,7 +29,7 @@ const TreeVarieties = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-fade-in-delay-1">
           Wybierz idealną choinkę
         </h2>
-        <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">Każda z naszych choinek jest starannie pielęgnowana, aby zapewnić najwyższą jakość i wyjątkowe doznania w Twoim domu podczas świąt. Drzewka wycinamy przy klientach!</p>
+        <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">Każda z naszych choinek jest starannie pielęgnowana, aby zapewnić najwyższą jakość i wyjątkowe doznania w Twoim domu podczas świąt. <strong>Drzewka wycinamy przy klientach!</strong></p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
