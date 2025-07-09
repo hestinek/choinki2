@@ -83,7 +83,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-forest-800 py-6 text-center text-forest-400 text-sm">
           <p>
-            &copy; {currentYear} Choinki Giżycko - Plantacja Choinek Soldany. Wszelkie prawa zastrzeżone. Polityka prywatności
+            &copy; {currentYear} Choinki Giżycko - Plantacja Choinek Soldany. Wszelkie prawa zastrzeżone. <a href="/polityka-prywatnosci" className="font-bold hover:text-white transition-colors">Polityka prywatności</a>
           </p>
         </div>
       </div>
