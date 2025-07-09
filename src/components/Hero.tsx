@@ -3,7 +3,7 @@ const Hero = () => {
   return <section id="strona-główna" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src="/lovable-uploads/b75bda7b-ee26-4295-90c5-881448864d70.png" alt="Plantacja choinek" className="w-full h-full object-cover" style={{
+        <img src="/lovable-uploads/4bdf1c61-28dc-40aa-b6db-8457f13756d4.png" alt="Plantacja choinek" className="w-full h-full object-cover" style={{
         filter: 'brightness(0.75)'
       }} loading="eager" width="1920" height="1080" />
       </div>

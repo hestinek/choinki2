@@ -33,7 +33,7 @@ const Footer = () => {
               {['Strona główna', 'Odmiany choinek', 'O naszej plantacji', 'Sezony i dostępność', 'Kontakt'].map((link) => (
                 <li key={link}>
                   <a 
-                    href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                    href={link.toLowerCase().replace(/\s+/g, '-') === 'strona-główna' ? '/' : `/#${link.toLowerCase().replace(/\s+/g, '-')}`}
                     className="text-forest-200 hover:text-white transition-colors"
                   >
                     {link}
