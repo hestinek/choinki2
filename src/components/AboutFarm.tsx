@@ -1,7 +1,4 @@
-import { useLanguage } from '../hooks/useLanguage';
-
 const AboutFarm = () => {
-  const { t } = useLanguage();
   return <section id="o-nas" className="section-padding">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Image */}
@@ -17,27 +14,32 @@ const AboutFarm = () => {
         
         {/* Content */}
         <div className="opacity-0 animate-fade-in-right">
-          <p className="text-forest-600 uppercase tracking-wider font-medium">{t('nav.about')}</p>
+          <p className="text-forest-600 uppercase tracking-wider font-medium">O naszej plantacji</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-3 max-w-md">
-            {t('about.title')}
+            Tradycja uprawy od pokoleń
           </h2>
           
           <div className="mt-6 space-y-4 text-forest-700">
             <p className="text-justify font-normal">
-              {t('about.description')}
+              Nasza rodzinna <strong>Plantacja Choinek Soldany</strong>, położona w malowniczych <strong>okolicach Giżycka na Mazurach</strong>, to miejsce, gdzie z pasją i zaangażowaniem uprawiamy najwyższej jakości choinki. Specjalizujemy się przede wszystkim w gatunku świerka, który od lat cieszy się ogromnym uznaniem wśród naszych klientów.
             </p>
+            <p className="text-justify">
+              Na ponad 15 hektarach terenów uprawnych prowadzimy hodowlę w zgodzie z naturą, stosując ekologiczne metody uprawy i ograniczając do minimum użycie sztucznych nawozów oraz środków ochrony roślin. Dzięki temu nasze <strong>choinki wyróżniają się pięknymi, intensywnymi barwami i klasycznym stożkowym kształtem</strong>.
+            </p>
+            <p className="text-justify">Oferujemy <strong>sprzedaż choinek ciętych oraz w donicach</strong> z całym systemem korzeniowym – idealnych na święta Bożego Narodzenia, do biur, ogrodów, domów i przestrzeni komercyjnych. Obsługujemy zarówno klientów indywidualnych, jak i firmy oraz dystrybutorów.</p>
+            <p className="text-justify">Odwiedź naszą plantację lub punkt sprzedaży w <strong>Giżycku</strong> i wybierz swoją idealną choinkę prosto od polskiego producenta!</p>
           </div>
           
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[{
             figure: '15+',
-            label: t('about.hectares')
+            label: 'Hektarów choinek'
           }, {
-            figure: '20+',
-            label: t('about.years')
+            figure: '3',
+            label: 'Warianty choinek'
           }, {
-            figure: '100%',
-            label: t('about.quality')
+            figure: '1000+',
+            label: 'Zadowolonych klientów'
           }].map((stat, index) => <div key={index} className="bg-forest-50 p-4 rounded-lg text-center">
                 <p className="text-2xl font-bold text-forest-700 font-serif">{stat.figure}</p>
                 <p className="text-forest-600 text-sm">{stat.label}</p>

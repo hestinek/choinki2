@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useLanguage } from '../hooks/useLanguage';
 const treeVarieties = [{
   id: 1,
   name: 'Świerk pospolity',
@@ -24,12 +23,11 @@ const treeVarieties = [{
 }];
 const TreeVarieties = () => {
   const [selectedTree, setSelectedTree] = useState<number | null>(null);
-  const { t } = useLanguage();
   return <section id="odmiany" className="bg-forest-50 section-padding">
       <div className="text-center mb-16">
-        <p className="text-forest-600 uppercase tracking-wider font-medium opacity-0 animate-fade-in">{t('nav.varieties')}</p>
+        <p className="text-forest-600 uppercase tracking-wider font-medium opacity-0 animate-fade-in">Nasze choinki</p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-fade-in-delay-1">
-          {t('varieties.title')}
+          Wybierz idealną choinkę
         </h2>
         <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">Każda z naszych choinek jest starannie pielęgnowana, aby zapewnić najwyższą jakość i wyjątkowe doznania w Twoim domu podczas świąt. <strong>Drzewka wycinamy przy klientach!</strong></p>
       </div>

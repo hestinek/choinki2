@@ -1,10 +1,8 @@
 
 import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
-import { useLanguage } from '../hooks/useLanguage';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const { t } = useLanguage();
   
   return (
     <footer className="bg-forest-900 text-white pt-16">
@@ -16,7 +14,7 @@ const Footer = () => {
               Choinki<span className="text-forest-400">Giżycko</span>
             </h3>
             <p className="text-forest-200 mb-6">
-              {t('footer.description')}
+              Rodzinna plantacja choinek z tradycjami. Oferujemy najwyższej jakości świerki pospolite, srebrne oraz w donicach. Hodowane w Mazurskiej miejscowości Sołdany koło Giżycka.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/plantacjasoldany/?locale=pl_PL" className="text-white hover:text-forest-400 transition-colors">
@@ -30,21 +28,15 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-semibold text-white mb-6 font-serif">{t('footer.links')}</h4>
+            <h4 className="text-xl font-semibold text-white mb-6 font-serif">Szybkie linki</h4>
             <ul className="space-y-3">
-              {[
-                { key: 'nav.home', href: '/' },
-                { key: 'nav.varieties', href: '/#odmiany' },
-                { key: 'nav.about', href: '/#o-nas' },
-                { key: 'nav.seasons', href: '/#sezony' },
-                { key: 'nav.contact', href: '/#kontakt' }
-              ].map((link) => (
-                <li key={link.key}>
+              {['Strona główna', 'Odmiany choinek', 'O naszej plantacji', 'Sezony i dostępność', 'Kontakt'].map((link) => (
+                <li key={link}>
                   <a 
-                    href={link.href}
+                    href={link.toLowerCase().replace(/\s+/g, '-') === 'strona-główna' ? '/' : `/#${link.toLowerCase().replace(/\s+/g, '-')}`}
                     className="text-forest-200 hover:text-white transition-colors"
                   >
-                    {t(link.key)}
+                    {link}
                   </a>
                 </li>
               ))}
@@ -53,7 +45,7 @@ const Footer = () => {
           
           {/* Contact Info */}
           <div>
-            <h4 className="text-xl font-semibold text-white mb-6 font-serif">{t('footer.contact.title')}</h4>
+            <h4 className="text-xl font-semibold text-white mb-6 font-serif">Kontakt</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-forest-400 mt-1" />
@@ -76,7 +68,7 @@ const Footer = () => {
           
           {/* Opening Hours */}
           <div>
-            <h4 className="text-xl font-semibold text-white mb-6 font-serif">{t('contact.hours')}</h4>
+            <h4 className="text-xl font-semibold text-white mb-6 font-serif">Godziny otwarcia</h4>
             <p className="text-forest-200 mb-2">Poza sezonem świątecznym:</p>
             <p className="text-forest-200 mb-4">
               Poniedziałek - Niedziela: 9:00 - 16:00
@@ -91,7 +83,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-forest-800 py-6 text-center text-forest-400 text-sm">
           <p>
-            {t('footer.copyright')} <a href="/polityka-prywatnosci" className="font-bold hover:text-white transition-colors">{t('footer.privacy')}</a>
+            &copy; {currentYear} Choinki Giżycko - Plantacja Choinek Soldany. Wszelkie prawa zastrzeżone. <a href="/polityka-prywatnosci" className="font-bold hover:text-white transition-colors">Polityka prywatności</a>
           </p>
         </div>
       </div>
