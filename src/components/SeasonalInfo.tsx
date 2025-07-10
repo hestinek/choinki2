@@ -1,28 +1,32 @@
 
 import { Calendar, Check } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
 
-const seasonTimeline = [
-  { month: "Marzec - Kwiecień", activity: "Pielęgnacja, przycinanie i kształtowanie drzewek", icon: "🌱" },
-  { month: "Maj - Sierpień", activity: "Pielęgnacja i nawożenie drzewek", icon: "✂️" },
-  { month: "Wrzesień - Listopad", activity: "Przygotowanie do sezonu świątecznego", icon: "🍂" },
-  { month: "Grudzień", activity: "Główny sezon sprzedaży choinek na święta", icon: "🎄" },
-];
-
-const perks = [
-  "Możliwość samodzielnego wyboru oraz ścięcia drzewka na plantacji",
-  "Profesjonalne cięcie dostosowane do Twoich potrzeb",
-  "Świeże drzewka, ścięte maksymalnie 48h przed odbiorem",
-  "Pakowanie i zabezpieczenie choinki na czas transportu",
-  "Porady dotyczące pielęgnacji i utrzymania świeżości"
-];
 
 const SeasonalInfo = () => {
+  const { t } = useLanguage();
+  
+  const seasonTimeline = [
+    { month: t('seasonal.march'), activity: t('seasonal.march.desc'), icon: "🌱" },
+    { month: t('seasonal.may'), activity: t('seasonal.may.desc'), icon: "✂️" },
+    { month: t('seasonal.september'), activity: t('seasonal.september.desc'), icon: "🍂" },
+    { month: t('seasonal.december'), activity: t('seasonal.december.desc'), icon: "🎄" },
+  ];
+
+  const perks = [
+    "Możliwość samodzielnego wyboru oraz ścięcia drzewka na plantacji",
+    "Profesjonalne cięcie dostosowane do Twoich potrzeb",
+    "Świeże drzewka, ścięte maksymalnie 48h przed odbiorem",
+    "Pakowanie i zabezpieczenie choinki na czas transportu",
+    "Porady dotyczące pielęgnacji i utrzymania świeżości"
+  ];
+  
   return (
     <section id="sezony" className="bg-forest-50 section-padding">
       <div className="text-center mb-16">
-        <p className="text-forest-600 uppercase tracking-wider font-medium opacity-0 animate-fade-in">Sezony i dostępność</p>
+        <p className="text-forest-600 uppercase tracking-wider font-medium opacity-0 animate-fade-in">{t('nav.seasons')}</p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-fade-in-delay-1">
-          Kalendarz naszej plantacji
+          {t('seasonal.title')}
         </h2>
         <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">
           Przez cały rok dbamy o nasze drzewka, aby w okresie świątecznym mogły zachwycać w Twoim domu.

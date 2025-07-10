@@ -1,10 +1,13 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   // Handle scroll effect
   useEffect(() => {
@@ -25,38 +28,54 @@ const Navbar = () => {
           </a>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
-            {['Strona główna', 'Odmiany', 'O nas', 'Sezony', 'Kontakt'].map((item) => (
+          <div className="hidden md:flex items-center space-x-8">
+            {[
+              { key: 'nav.home', href: '/' },
+              { key: 'nav.varieties', href: '/#odmiany' },
+              { key: 'nav.about', href: '/#o-nas' },
+              { key: 'nav.seasons', href: '/#sezony' },
+              { key: 'nav.contact', href: '/#kontakt' }
+            ].map((item) => (
               <a 
-                key={item} 
-                href={`/${item.toLowerCase().replace(' ', '-') === 'strona-główna' ? '' : `#${item.toLowerCase().replace(' ', '-')}`}`}
+                key={item.key} 
+                href={item.href}
                 className="text-forest-700 hover:text-forest-500 transition-colors font-medium"
               >
-                {item}
+                {t(item.key)}
               </a>
             ))}
+            <LanguageSelector />
           </div>
           
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-forest-700"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Menu Button and Language Selector */}
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageSelector />
+            <button 
+              className="text-forest-700"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
         
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-gray-200/40 backdrop-blur-sm rounded-2xl shadow-md mt-2 px-4 py-3">
-            {['Strona główna', 'Odmiany', 'O nas', 'Sezony', 'Kontakt'].map((item) => (
+            {[
+              { key: 'nav.home', href: '/' },
+              { key: 'nav.varieties', href: '/#odmiany' },
+              { key: 'nav.about', href: '/#o-nas' },
+              { key: 'nav.seasons', href: '/#sezony' },
+              { key: 'nav.contact', href: '/#kontakt' }
+            ].map((item) => (
               <a 
-                key={item} 
-                href={`/${item.toLowerCase().replace(' ', '-') === 'strona-główna' ? '' : `#${item.toLowerCase().replace(' ', '-')}`}`}
+                key={item.key} 
+                href={item.href}
                 className="block text-forest-700 hover:text-forest-500 transition-colors font-medium py-2 px-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {item}
+                {t(item.key)}
               </a>
             ))}
           </div>

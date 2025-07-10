@@ -1,15 +1,18 @@
 
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
 
 const Contact = () => {
+  const { t } = useLanguage();
+  
   return (
     <section id="kontakt" className="section-padding">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Contact Info */}
         <div className="opacity-0 animate-fade-in">
-          <p className="text-forest-600 uppercase tracking-wider font-medium">Skontaktuj się z nami</p>
+          <p className="text-forest-600 uppercase tracking-wider font-medium">{t('nav.contact')}</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-3">
-            Jesteśmy do Twojej dyspozycji
+            {t('contact.title')}
           </h2>
           
           <p className="mt-6 text-forest-700">
@@ -23,7 +26,7 @@ const Contact = () => {
                 <MapPin size={20} />
               </div>
               <div>
-                <h3 className="font-medium text-forest-800 text-lg">Adres plantacji</h3>
+                <h3 className="font-medium text-forest-800 text-lg">{t('contact.address')}</h3>
                 <p className="text-forest-700 mt-1">
                   Sołdany 28<br />
                   11-500 Sołdany<br />
@@ -37,7 +40,7 @@ const Contact = () => {
                 <Phone size={20} />
               </div>
               <div>
-                <h3 className="font-medium text-forest-800 text-lg">Telefon</h3>
+                <h3 className="font-medium text-forest-800 text-lg">{t('contact.phone')}</h3>
                 <p className="text-forest-700 mt-1">
                   +48 796 214 778
                 </p>
@@ -49,7 +52,7 @@ const Contact = () => {
                 <Mail size={20} />
               </div>
               <div>
-                <h3 className="font-medium text-forest-800 text-lg">Email</h3>
+                <h3 className="font-medium text-forest-800 text-lg">{t('contact.email')}</h3>
                 <p className="text-forest-700 mt-1">
                   plantacjasoldany@gmail.com
                 </p>
@@ -61,7 +64,7 @@ const Contact = () => {
                 <Clock size={20} />
               </div>
               <div>
-                <h3 className="font-medium text-forest-800 text-lg">Godziny otwarcia</h3>
+                <h3 className="font-medium text-forest-800 text-lg">{t('contact.hours')}</h3>
                 <p className="text-forest-700 mt-1">
                   Poza sezonem świątecznym:<br />
                   Poniedziałek - Niedziela: 9:00 - 16:00
