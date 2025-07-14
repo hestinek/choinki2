@@ -13,7 +13,7 @@ const Footer = () => {
             <h3 className="font-serif text-2xl font-bold text-white mb-6 flex items-center">
               Choinki<span className="text-forest-400">Giżycko</span>
             </h3>
-            <p className="text-forest-200 mb-6">
+            <p className="text-forest-200 mb-6 text-justify">
               Rodzinna plantacja choinek z tradycjami. Oferujemy najwyższej jakości świerki pospolite, srebrne oraz w donicach. Hodowane w Mazurskiej miejscowości Sołdany koło Giżycka.
             </p>
             <div className="flex space-x-4">

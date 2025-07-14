@@ -62,7 +62,7 @@ const SeasonalInfo = () => {
                     <span>Ważne daty</span>
                   </h4>
                   <p className="mt-2 text-forest-700">
-                    Sprzedaż choinek rozpoczyna się 1 grudnia i trwa do Wigilii
+                    Sprzedaż choinek na stoisku rozpoczyna się 1 grudnia i trwa do Wigilii
                   </p>
                 </div>
               )}
@@ -90,7 +90,7 @@ const SeasonalInfo = () => {
           </div>
           
           <div className="bg-forest-50 p-6 rounded-lg">
-            <h4 className="text-lg font-semibold text-forest-800 font-serif mb-3">Odbiór osobisty</h4>
+            <h4 className="text-lg font-semibold text-forest-800 font-serif mb-3">Świąteczne szaleństwo</h4>
             <p className="text-forest-700 mb-4 text-justify">
               W grudniu zapraszamy do odwiedzenia naszej plantacji całymi rodzinami wraz z 4 nożnymi przyjaciółmi. To doskonała okazja, by spędzić rodzinny dzień wybierając idealną choinkę i cieszyć się świąteczną atmosferą oraz mazurską naturą!
             </p>
