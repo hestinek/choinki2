@@ -6,6 +6,8 @@ const Hero = () => {
         <img src="/lovable-uploads/e086ccdf-8897-40f8-8eeb-643228b8dbca.png" alt="Plantacja choinek" className="w-full h-full object-cover" loading="eager" width="1920" height="1080" />
       </div>
       
+      {/* Light black mask overlay */}
+      <div className="absolute inset-0 bg-black/30 z-10" />
       
       {/* Content */}
       <div className="container mx-auto px-6 md:px-12 relative z-20 text-center">
