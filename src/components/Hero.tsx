@@ -3,9 +3,7 @@ const Hero = () => {
   return <section id="strona-główna" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src="/lovable-uploads/4bdf1c61-28dc-40aa-b6db-8457f13756d4.png" alt="Plantacja choinek" className="w-full h-full object-cover" style={{
-        filter: 'brightness(0.75)'
-      }} loading="eager" width="1920" height="1080" />
+        <img src="/lovable-uploads/e086ccdf-8897-40f8-8eeb-643228b8dbca.png" alt="Plantacja choinek" className="w-full h-full object-cover" loading="eager" width="1920" height="1080" />
       </div>
       
       {/* Overlay Gradient - lighter at top for navbar visibility */}
