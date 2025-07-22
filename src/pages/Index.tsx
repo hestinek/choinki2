@@ -7,6 +7,7 @@ import AboutFarm from '../components/AboutFarm';
 import SeasonalInfo from '../components/SeasonalInfo';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import CookieBanner from '../components/CookieBanner';
 
 const Index = () => {
   useEffect(() => {
@@ -40,6 +41,7 @@ const Index = () => {
       <SeasonalInfo />
       <Contact />
       <Footer />
+      <CookieBanner />
     </div>
   );
 };
