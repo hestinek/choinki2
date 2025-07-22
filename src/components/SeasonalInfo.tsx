@@ -2,9 +2,9 @@
 import { Calendar, Check } from 'lucide-react';
 
 const seasonTimeline = [
-  { month: "Marzec - Kwiecień", activity: "Pielęgnacja, przycinanie i kształtowanie drzewek", icon: "🌱" },
+  { month: "Marzec - Kwiecień", activity: "Pielęgnacja, przycinanie i kształtowanie drzewek", icon: "🌱", extraInfo: "Sprzedaż świerków w donicy!" },
   { month: "Maj - Sierpień", activity: "Pielęgnacja i nawożenie drzewek", icon: "✂️" },
-  { month: "Wrzesień - Listopad", activity: "Przygotowanie do sezonu świątecznego", icon: "🍂" },
+  { month: "Wrzesień - Listopad", activity: "Przygotowanie do sezonu świątecznego", icon: "🍂", extraInfo: "Sprzedaż świerków w donicy!" },
   { month: "Grudzień", activity: "Główny sezon sprzedaży choinek na święta", icon: "🎄" },
 ];
 
@@ -45,6 +45,9 @@ const SeasonalInfo = () => {
               <div className={`p-6 bg-white rounded-xl shadow-md inline-block card-hover ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
                 <h3 className="text-xl font-semibold text-forest-800 font-serif">{item.month}</h3>
                 <p className="mt-2 text-forest-700">{item.activity}</p>
+                {item.extraInfo && (
+                  <p className="mt-2 text-forest-800 font-bold">{item.extraInfo}</p>
+                )}
               </div>
             </div>
             
