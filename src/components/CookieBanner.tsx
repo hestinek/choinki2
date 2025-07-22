@@ -24,11 +24,11 @@ const CookieBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-6 left-6 right-6 z-50 flex justify-center">
-      <div className="bg-white/95 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg max-w-md p-4 animate-slide-up">
+    <div className="fixed bottom-6 right-6 z-50">
+      <div className="bg-gray-200/40 backdrop-blur-sm rounded-3xl shadow-sm px-6 py-4 max-w-sm animate-slide-up">
         <div className="flex items-start justify-between gap-3">
           <div className="flex-1">
-            <p className="text-sm text-gray-700 mb-3">
+            <p className="text-sm text-forest-700 mb-3 font-medium">
               Ta strona używa plików cookies aby zapewnić najlepsze doświadczenia. 
               Kontynuując korzystanie z witryny, wyrażasz zgodę na ich użycie.
             </p>
@@ -36,7 +36,7 @@ const CookieBanner = () => {
               <Button 
                 onClick={acceptCookies}
                 size="sm"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                className="bg-forest-600 hover:bg-forest-700 text-white font-bold"
               >
                 Akceptuj
               </Button>
@@ -44,7 +44,7 @@ const CookieBanner = () => {
           </div>
           <button 
             onClick={closeBanner}
-            className="text-gray-400 hover:text-gray-600 transition-colors"
+            className="text-forest-600 hover:text-forest-800 transition-colors"
           >
             <X size={16} />
           </button>
