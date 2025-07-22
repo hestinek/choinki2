@@ -59,7 +59,7 @@ const SeasonalInfo = () => {
             
             <div className={`w-full md:w-5/12 mt-4 md:mt-0 ${index % 2 === 0 ? 'md:order-2' : 'md:text-right'}`}>
               {index === 1 && (
-                <div className={`p-6 bg-gold-50 rounded-xl shadow-md inline-block ${index % 2 === 0 ? '' : 'md:ml-auto'}`}>
+                <div className={`p-6 bg-gold-50 rounded-xl shadow-md inline-block ${index % 2 === 0 ? '' : 'md:ml-auto md:-ml-8'}`}>
                   <h4 className="text-lg font-semibold text-forest-800 font-serif flex items-center justify-center md:justify-end gap-2">
                     <Calendar size={18} className="text-gold-600" />
                     <span>Ważne daty</span>
