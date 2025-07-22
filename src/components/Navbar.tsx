@@ -30,7 +30,7 @@ const Navbar = () => {
               <a 
                 key={item} 
                 href={`/${item.toLowerCase().replace(' ', '-') === 'strona-główna' ? '' : `#${item.toLowerCase().replace(' ', '-')}`}`}
-                className="text-forest-700 hover:text-forest-500 transition-colors font-medium"
+                className="text-forest-700 hover:text-forest-500 transition-colors font-bold"
               >
                 {item}
               </a>
@@ -53,7 +53,7 @@ const Navbar = () => {
               <a 
                 key={item} 
                 href={`/${item.toLowerCase().replace(' ', '-') === 'strona-główna' ? '' : `#${item.toLowerCase().replace(' ', '-')}`}`}
-                className="block text-forest-700 hover:text-forest-500 transition-colors font-medium py-2 px-2"
+                className="block text-forest-700 hover:text-forest-500 transition-colors font-bold py-2 px-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item}
