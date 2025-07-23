@@ -11,9 +11,8 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-6 md:px-12 relative z-20 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white opacity-0 animate-fade-in max-w-4xl mx-auto leading-tight">
-          Mazurskie choinki prosto z Plantacji w Soldanach
-        </h1>
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white opacity-0 animate-fade-in max-w-4xl mx-auto leading-tight">Mazurskie choinki 
+Plantacja Choinek Soldany</h1>
         <p className="mt-6 text-xl md:text-2xl text-white/90 opacity-0 animate-fade-in-delay-1 max-w-2xl mx-auto">Tradycja, jakość i szacunek do natury od ponad 20 lat   </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-delay-2">
           <a href="#odmiany" className="btn-primary">
