@@ -22,14 +22,14 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-6 md:px-12 relative z-20 text-center">
         <BlurText 
-          text="Mazurskie choinki"
+          text="Mazurskie choinki Soldany"
           className="text-4xl md:text-5xl lg:text-7xl font-bold text-white max-w-4xl mx-auto leading-tight"
           animateBy="words"
           delay={200}
           direction="top"
         />
         <BlurText 
-          text="Plantacja Choinek Soldany"
+          text="Plantacja Choinek"
           className="text-4xl md:text-5xl lg:text-7xl font-bold text-white max-w-4xl mx-auto leading-tight"
           animateBy="words"
           delay={200}
