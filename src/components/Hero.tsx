@@ -25,14 +25,14 @@ const Hero = () => {
           text="Mazurskie choinki Plantacja Choinek Soldany"
           className="text-4xl md:text-5xl lg:text-7xl font-bold text-white max-w-4xl mx-auto leading-tight"
           animateBy="words"
-          delay={100}
+          delay={200}
           direction="top"
         />
         <BlurText 
           text="Tradycja, jakość i szacunek do natury od ponad 20 lat"
           className="mt-6 text-xl md:text-2xl text-white/90 max-w-2xl mx-auto"
           animateBy="words"
-          delay={80}
+          delay={150}
           direction="top"
           stepDuration={0.25}
         />
