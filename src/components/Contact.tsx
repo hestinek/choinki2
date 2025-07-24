@@ -97,11 +97,7 @@ const Contact = () => {
           <div className="mt-4 text-forest-600 text-sm space-y-3">
             <p className="text-justify">
               📍 <strong>Lokalizacja Plantacji Choinek Soldany</strong><br />
-              Nasza <strong>Plantacja Choinek Soldany</strong> mieści się w malowniczej miejscowości Sołdany, zaledwie kilka kilometrów od <strong>Giżycka</strong>, w sercu województwa warmińsko-mazurskiego. To idealne miejsce dla wszystkich, którzy szukają <strong>świeżych, ekologicznych choinek z własnej uprawy</strong> w okolicach Giżycka.
-            </p>
-            <p className="text-justify">
-              🚗 <strong>Łatwy dojazd do plantacji</strong><br />
-              Do naszej plantacji dojedziesz bez problemu zarówno samochodem osobowym, jak i większym pojazdem dostawczym. Droga dojazdowa jest asfaltowa, co umożliwia sprawny odbiór choinek – zarówno dla klientów detalicznych, jak i hurtowych.
+              Nasza <strong>Plantacja Choinek Soldany</strong> mieści się w malowniczej miejscowości Sołdany, zaledwie kilka kilometrów od Giżycka, w sercu województwa warmińsko-mazurskiego.
             </p>
             <p className="text-justify">
               🎄 <strong>Zaplanuj swoją wizytę i wybierz choinkę prosto z plantacji</strong><br />

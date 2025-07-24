@@ -45,7 +45,7 @@ const TreeVarieties = () => {
                 <div className="min-w-0 flex-1">
                   <p className="text-sm text-forest-600">Wysokość: {tree.height}</p>
                 </div>
-                <button className="text-forest-600 hover:text-forest-800 font-medium text-sm" onClick={() => setSelectedTree(selectedTree === tree.id ? null : tree.id)}>
+                <button className="text-forest-600 hover:text-forest-800 font-bold text-sm" onClick={() => setSelectedTree(selectedTree === tree.id ? null : tree.id)}>
                   {selectedTree === tree.id ? 'Mniej info' : 'Więcej info'}
                 </button>
               </div>

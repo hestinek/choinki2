@@ -20,11 +20,11 @@ const AboutFarm = () => {
           </h2>
           
           <div className="mt-6 space-y-4 text-forest-700">
-            <p className="text-justify font-normal">
+            <p className="text-justify">
               Nasza rodzinna <strong>Plantacja Choinek Soldany</strong>, położona w malowniczych <strong>okolicach Giżycka na Mazurach</strong>, to miejsce, gdzie z pasją i zaangażowaniem uprawiamy najwyższej jakości choinki. Specjalizujemy się przede wszystkim w gatunku świerka, który od lat cieszy się ogromnym uznaniem wśród naszych klientów.
             </p>
             <p className="text-justify">
-              Na ponad 15 hektarach terenów uprawnych prowadzimy hodowlę w zgodzie z naturą, stosując ekologiczne metody uprawy i ograniczając do minimum użycie sztucznych nawozów oraz środków ochrony roślin. Dzięki temu nasze <strong>choinki wyróżniają się pięknymi, intensywnymi barwami i klasycznym stożkowym kształtem</strong>.
+              <strong>Nasze choinki wyróżniają się pięknymi, intensywnymi barwami i klasycznym stożkowym kształtem.</strong>
             </p>
             <p className="text-justify">Oferujemy <strong>sprzedaż choinek ciętych oraz w donicach</strong> z całym systemem korzeniowym – idealnych na święta Bożego Narodzenia, do biur, ogrodów, domów i przestrzeni komercyjnych. Obsługujemy zarówno klientów indywidualnych, jak i firmy oraz dystrybutorów.</p>
             <p className="text-justify">Odwiedź naszą plantację lub punkt sprzedaży w <strong>Giżycku</strong> i wybierz swoją idealną choinkę prosto od polskiego producenta!</p>
