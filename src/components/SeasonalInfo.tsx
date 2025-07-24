@@ -18,7 +18,7 @@ const perks = [
 
 const SeasonalInfo = () => {
   return (
-    <section id="sezony" className="bg-forest-50 section-padding">
+    <section id="sezony" className="bg-forest-50 section-padding rounded-2xl">
       <div className="text-center mb-16">
         <p className="text-forest-600 uppercase tracking-wider font-medium opacity-0 animate-fade-in">Sezony i dostępność</p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-fade-in-delay-1">
