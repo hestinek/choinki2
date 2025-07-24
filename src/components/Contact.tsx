@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="kontakt" className="section-padding">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Contact Info */}
-        <div className="opacity-0 animate-fade-in">
+        <div className="opacity-0 animate-slide-in-left">
           <p className="text-forest-600 uppercase tracking-wider font-medium">Skontaktuj się z nami</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-3">
             Jesteśmy do Twojej dyspozycji
@@ -76,7 +76,7 @@ const Contact = () => {
         </div>
         
         {/* Google Maps */}
-        <div className="bg-white rounded-xl shadow-md p-8 opacity-0 animate-fade-in-delay-1">
+        <div className="bg-white rounded-xl shadow-md p-8 opacity-0 animate-slide-in-right">
           <h3 className="text-2xl font-bold text-forest-800 font-serif mb-6">
             Jak do nas dojechać
           </h3>

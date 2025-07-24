@@ -2,18 +2,18 @@ const AboutFarm = () => {
   return <section id="o-nas" className="section-padding">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Image */}
-        <div className="relative opacity-0 animate-fade-in-left">
+        <div className="relative opacity-0 animate-slide-in-left">
           <div className="rounded-2xl overflow-hidden">
             <img src="/lovable-uploads/40aa1e67-5cef-43c2-887e-841874b2b521.png" alt="Nasza plantacja choinek" className="w-full h-[500px] object-cover" loading="lazy" width="600" height="500" />
           </div>
-          <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg w-full max-w-xs opacity-0 animate-fade-in-delay-2">
+          <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg w-full max-w-xs opacity-0 animate-rotate-in">
             <p className="text-forest-600 font-serif text-xl">20+ lat</p>
             <p className="text-forest-700 mt-1">doświadczenia w uprawie choinek</p>
           </div>
         </div>
         
         {/* Content */}
-        <div className="opacity-0 animate-fade-in-right">
+        <div className="opacity-0 animate-slide-in-right">
           <p className="text-forest-600 uppercase tracking-wider font-medium">O naszej plantacji</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-3 max-w-md">
             Tradycja uprawy od pokoleń

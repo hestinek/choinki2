@@ -20,11 +20,11 @@ const SeasonalInfo = () => {
   return (
     <section id="sezony" className="bg-forest-50 section-padding rounded-2xl">
       <div className="text-center mb-16">
-        <p className="text-forest-600 uppercase tracking-wider font-medium opacity-0 animate-fade-in">Sezony i dostępność</p>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-fade-in-delay-1">
+        <p className="text-forest-600 uppercase tracking-wider font-medium opacity-0 animate-slide-up">Sezony i dostępność</p>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-zoom-in">
           Kalendarz naszej plantacji
         </h2>
-        <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">
+        <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto opacity-0 animate-rotate-in">
           Przez cały rok dbamy o nasze drzewka, aby w okresie świątecznym mogły zachwycać w Twoim domu.
           Sprawdź, co dzieje się na plantacji w różnych porach roku.
         </p>
@@ -38,7 +38,7 @@ const SeasonalInfo = () => {
           <div 
             key={index} 
             className={`flex flex-col md:flex-row md:items-center md:justify-between mb-10 md:mb-16 relative opacity-0 ${
-              index % 2 === 0 ? 'animate-fade-in-left' : 'animate-fade-in-right'
+              index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'
             }`}
           >
             <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right' : 'md:order-2'}`}>
@@ -75,7 +75,7 @@ const SeasonalInfo = () => {
       </div>
 
       {/* Additional Info */}
-      <div className="mt-16 bg-white rounded-xl p-8 shadow-md opacity-0 animate-fade-in">
+      <div className="mt-16 bg-white rounded-xl p-8 shadow-md opacity-0 animate-zoom-in">
         <h3 className="text-2xl font-bold text-forest-800 font-serif mb-6">Dodatkowe usługi i korzyści</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
