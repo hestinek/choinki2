@@ -27,7 +27,6 @@ const AboutFarm = () => {
               <strong>Nasze choinki wyróżniają się pięknymi, intensywnymi barwami i klasycznym stożkowym kształtem.</strong>
             </p>
             <p className="text-justify">Oferujemy <strong>sprzedaż choinek ciętych oraz w donicach</strong> z całym systemem korzeniowym – idealnych na święta Bożego Narodzenia, do biur, ogrodów, domów i przestrzeni komercyjnych. Obsługujemy zarówno klientów indywidualnych, jak i firmy oraz dystrybutorów.</p>
-            <p className="text-justify">Odwiedź naszą plantację lub punkt sprzedaży w <strong>Giżycku</strong> i wybierz swoją idealną choinkę prosto od polskiego producenta!</p>
           </div>
           
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
