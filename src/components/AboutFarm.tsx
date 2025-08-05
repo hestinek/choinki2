@@ -7,8 +7,8 @@ const AboutFarm = () => {
             <img src="/lovable-uploads/40aa1e67-5cef-43c2-887e-841874b2b521.png" alt="Nasza plantacja choinek" className="w-full h-[500px] object-cover" loading="lazy" width="600" height="500" />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg w-full max-w-xs opacity-0 animate-rotate-in">
-            <p className="text-forest-600 font-serif text-xl">20+ lat</p>
-            <p className="text-forest-700 mt-1">doświadczenia w uprawie choinek</p>
+            <p className="text-forest-600 font-serif text-xl">25+</p>
+            <p className="text-forest-700 mt-1">Lat Doświadczenia</p>
           </div>
         </div>
         
