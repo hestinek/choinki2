@@ -1,5 +1,4 @@
 import { TreePine } from 'lucide-react';
-
 const AboutFarm = () => {
   return <section id="o-nas" className="section-padding">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -19,7 +18,7 @@ const AboutFarm = () => {
         
         {/* Content */}
         <div className="opacity-0 animate-slide-in-right">
-          <p className="text-forest-600 uppercase tracking-wider font-medium">O naszej plantacji</p>
+          
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-3 max-w-md">
             Tradycja uprawy od pokoleń
           </h2>
