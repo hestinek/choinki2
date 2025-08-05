@@ -1,6 +1,6 @@
 import { TreePine } from 'lucide-react';
 const AboutFarm = () => {
-  return <section id="o-nas" className="section-padding rounded-3xl mx-4 md:mx-8">
+  return <section id="o-nas" className="section-padding rounded-3xl mx-4 md:mx-8 max-w-6xl xl:mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Image */}
         <div className="relative opacity-0 animate-slide-in-left">

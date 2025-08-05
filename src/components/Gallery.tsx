@@ -35,7 +35,7 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="drzewka" className="section-padding bg-forest-50 rounded-3xl mx-4 md:mx-8">
+    <section id="drzewka" className="section-padding bg-forest-50 rounded-3xl mx-4 md:mx-8 max-w-6xl xl:mx-auto">
       <div className="text-center mb-12">
         <p className="text-forest-600 uppercase tracking-wider font-medium">Nasze drzewka</p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-3">

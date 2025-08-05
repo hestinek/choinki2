@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="kontakt" className="section-padding rounded-3xl mx-4 md:mx-8">
+    <section id="kontakt" className="section-padding rounded-3xl mx-4 md:mx-8 max-w-6xl xl:mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Contact Info */}
         <div className="opacity-0 animate-slide-in-left">

@@ -20,7 +20,7 @@ const seasonTimeline = [{
 }];
 const perks = ["Możliwość samodzielnego wyboru oraz ścięcia drzewka na plantacji", "Profesjonalne cięcie dostosowane do Twoich potrzeb", "Świeże drzewka, ścięte maksymalnie 48h przed odbiorem", "Pakowanie i zabezpieczenie choinki na czas transportu", "Porady dotyczące pielęgnacji i utrzymania świeżości"];
 const SeasonalInfo = () => {
-  return <section id="sezony" className="bg-forest-50 section-padding rounded-3xl mx-4 md:mx-8">
+  return <section id="sezony" className="bg-forest-50 section-padding rounded-3xl mx-4 md:mx-8 max-w-6xl xl:mx-auto">
       <div className="text-center mb-16">
         
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-zoom-in">
