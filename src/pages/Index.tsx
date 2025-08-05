@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import TreeVarieties from '../components/TreeVarieties';
 import AboutFarm from '../components/AboutFarm';
+import Gallery from '../components/Gallery';
 import SeasonalInfo from '../components/SeasonalInfo';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -38,6 +39,7 @@ const Index = () => {
       <Hero />
       <TreeVarieties />
       <AboutFarm />
+      <Gallery />
       <SeasonalInfo />
       <Contact />
       <Footer />

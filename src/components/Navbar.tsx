@@ -26,7 +26,7 @@ const Navbar = () => {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {['Strona główna', 'Odmiany', 'O nas', 'Sezony', 'Kontakt'].map((item) => (
+            {['Strona główna', 'Odmiany', 'O nas', 'Drzewka', 'Sezony', 'Kontakt'].map((item) => (
               <a 
                 key={item} 
                 href={`/${item.toLowerCase().replace(' ', '-') === 'strona-główna' ? '' : `#${item.toLowerCase().replace(' ', '-')}`}`}
@@ -49,7 +49,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-gray-200/40 backdrop-blur-sm rounded-3xl shadow-md mt-2 px-4 py-3">
-            {['Strona główna', 'Odmiany', 'O nas', 'Sezony', 'Kontakt'].map((item) => (
+            {['Strona główna', 'Odmiany', 'O nas', 'Drzewka', 'Sezony', 'Kontakt'].map((item) => (
               <a 
                 key={item} 
                 href={`/${item.toLowerCase().replace(' ', '-') === 'strona-główna' ? '' : `#${item.toLowerCase().replace(' ', '-')}`}`}
