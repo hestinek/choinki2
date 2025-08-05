@@ -42,7 +42,7 @@ const Gallery = () => {
           Galeria Zdjęć
         </h2>
         <p className="text-forest-700 mt-4 max-w-2xl mx-auto">
-          Zapraszamy do obejrzenia naszych pięknych choinek rosnących na plantacji w malowniczych okolicach Giżycka
+          Odkryj piękno naszych starannie uprawianych choinek. Każda z nich to dzieło natury.
         </p>
       </div>
 
