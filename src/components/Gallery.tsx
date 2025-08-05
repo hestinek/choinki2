@@ -58,18 +58,13 @@ const Gallery = () => {
             {images.map((image, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-[3/4] overflow-hidden">
                     <img
                       src={image.src}
                       alt={image.alt}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       loading="lazy"
                     />
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-forest-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <p className="text-white text-sm font-medium">{image.alt}</p>
-                    </div>
                   </div>
                 </div>
               </CarouselItem>
