@@ -10,8 +10,8 @@ const AboutFarm = () => {
           </div>
           <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg w-full max-w-xs opacity-0 animate-rotate-in">
             <div className="flex items-center gap-2">
-              <TreePine className="text-forest-600 font-bold" size={24} strokeWidth={3} />
-              <p className="text-forest-600 font-serif text-xl font-bold">25+</p>
+              <TreePine className="text-forest-600" size={24} />
+              <p className="text-forest-600 font-serif text-xl">25+</p>
             </div>
             <p className="text-forest-700 mt-1">Lat Doświadczenia</p>
           </div>

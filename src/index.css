@@ -154,16 +154,4 @@
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
-
-  .section-transition {
-    @apply transition-all duration-700 ease-in-out transform;
-  }
-
-  .section-enter {
-    @apply opacity-0 translate-y-8;
-  }
-
-  .section-enter-active {
-    @apply opacity-100 translate-y-0;
-  }
 }
