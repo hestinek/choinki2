@@ -35,6 +35,9 @@
     --input: 120 5% 88%;
     --ring: 134 50% 30%;
 
+    /* Custom plantation calendar background */
+    --plantation-calendar: 129 19% 70%;
+
     --radius: 0.75rem;
   }
 
