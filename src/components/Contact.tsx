@@ -87,7 +87,7 @@ const Contact = () => {
           
           <div className="mt-4 text-forest-600 text-sm space-y-3">
             <p className="text-justify">
-              📍 <strong>Lokalizacja Plantacji Choinek Soldany</strong><br />
+              📍 <strong>Lokalizacja Plantacji Soldany</strong><br />
               Nasza <strong>Plantacja Choinek Soldany</strong> mieści się w malowniczej miejscowości Sołdany, zaledwie kilka kilometrów od Giżycka, w sercu województwa warmińsko-mazurskiego.
             </p>
             <p className="text-justify">
