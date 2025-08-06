@@ -23,7 +23,8 @@ const treeVarieties = [{
 }];
 const TreeVarieties = () => {
   const [selectedTree, setSelectedTree] = useState<number | null>(null);
-  return <section id="odmiany" className="bg-forest-50 section-padding rounded-2xl">
+  return <section id="odmiany" className="w-full bg-forest-50 rounded-3xl mx-4 md:mx-8 mb-8">
+      <div className="section-padding">
       <div className="text-center mb-16">
         
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-fade-in-delay-1">
@@ -61,6 +62,7 @@ const TreeVarieties = () => {
                 </div>}
             </div>
           </div>)}
+      </div>
       </div>
     </section>;
 };

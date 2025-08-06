@@ -19,7 +19,8 @@ const Gallery = () => {
     src: "/lovable-uploads/eac0c5d4-a542-4675-8532-777597e3b650.png",
     alt: "Plantacja choinek w mglisty poranek"
   }];
-  return <section id="drzewka" className="section-padding bg-forest-50">
+  return <section id="drzewka" className="w-full bg-forest-50 rounded-3xl mx-4 md:mx-8 mb-8">
+      <div className="section-padding">
       <div className="text-center mb-12">
         
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-3">
@@ -54,6 +55,7 @@ const Gallery = () => {
             {images.map((_, index) => <div key={index} className="w-2 h-2 rounded-full bg-forest-300" />)}
           </div>
         </div>
+      </div>
       </div>
     </section>;
 };

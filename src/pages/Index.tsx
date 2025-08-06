@@ -34,7 +34,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden">
+    <div className="min-h-screen bg-forest-50 overflow-x-hidden">
       <Navbar />
       <Hero />
       <TreeVarieties />
