@@ -39,7 +39,7 @@ const SeasonalInfo = () => {
         
         {seasonTimeline.map((item, index) => <div key={index} className={`flex flex-col md:flex-row md:items-center md:justify-between mb-10 md:mb-16 relative`}>
             <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right' : 'md:order-2'}`}>
-              <div className={`p-6 bg-white rounded-xl shadow-md inline-block card-hover ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
+              <div className={`p-6 bg-forest-50 rounded-xl shadow-md inline-block card-hover ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
                 <h3 className="text-xl font-semibold text-forest-800 font-serif">{item.month}</h3>
                 <p className="mt-2 text-forest-700">{item.activity}</p>
                 {item.extraInfo && <p className="mt-2 text-forest-800 font-bold">{item.extraInfo}</p>}
@@ -67,7 +67,7 @@ const SeasonalInfo = () => {
       </div>
 
       {/* Additional Info */}
-      <div className="mt-16 bg-white rounded-xl p-8 shadow-md">
+      <div className="mt-16 bg-forest-50 rounded-xl p-8 shadow-md">
         <h3 className="text-2xl font-bold text-forest-800 font-serif mb-6">Dodatkowe usługi i korzyści</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -82,7 +82,7 @@ const SeasonalInfo = () => {
             </ul>
           </div>
           
-          <div className="bg-forest-50 p-6 rounded-lg">
+          <div className="bg-white p-6 rounded-lg">
             <h4 className="text-lg font-semibold text-forest-800 font-serif mb-3">Świąteczne szaleństwo</h4>
             <p className="text-forest-700 mb-4 text-justify">
               W grudniu zapraszamy do odwiedzenia naszej plantacji całymi rodzinami wraz z 4 nożnymi przyjaciółmi. To doskonała okazja, by spędzić rodzinny dzień wybierając idealną choinkę i cieszyć się świąteczną atmosferą oraz mazurską naturą!
