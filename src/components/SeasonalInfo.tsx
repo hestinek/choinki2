@@ -1,26 +1,28 @@
-
 import { Calendar, Check } from 'lucide-react';
-
-const seasonTimeline = [
-  { month: "Marzec - Kwiecień", activity: "Pielęgnacja, przycinanie i kształtowanie drzewek", icon: "🌱", extraInfo: "Sprzedaż świerków w donicy!" },
-  { month: "Maj - Sierpień", activity: "Pielęgnacja i nawożenie drzewek", icon: "✂️" },
-  { month: "Wrzesień - Listopad", activity: "Przygotowanie do sezonu świątecznego", icon: "🍂", extraInfo: "Sprzedaż świerków w donicy!" },
-  { month: "Grudzień", activity: "Główny sezon sprzedaży choinek na święta", icon: "🎄" },
-];
-
-const perks = [
-  "Możliwość samodzielnego wyboru oraz ścięcia drzewka na plantacji",
-  "Profesjonalne cięcie dostosowane do Twoich potrzeb",
-  "Świeże drzewka, ścięte maksymalnie 48h przed odbiorem",
-  "Pakowanie i zabezpieczenie choinki na czas transportu",
-  "Porady dotyczące pielęgnacji i utrzymania świeżości"
-];
-
+const seasonTimeline = [{
+  month: "Marzec - Kwiecień",
+  activity: "Pielęgnacja, przycinanie i kształtowanie drzewek",
+  icon: "🌱",
+  extraInfo: "Sprzedaż świerków w donicy!"
+}, {
+  month: "Maj - Sierpień",
+  activity: "Pielęgnacja i nawożenie drzewek",
+  icon: "✂️"
+}, {
+  month: "Wrzesień - Listopad",
+  activity: "Przygotowanie do sezonu świątecznego",
+  icon: "🍂",
+  extraInfo: "Sprzedaż świerków w donicy!"
+}, {
+  month: "Grudzień",
+  activity: "Główny sezon sprzedaży choinek na święta",
+  icon: "🎄"
+}];
+const perks = ["Możliwość samodzielnego wyboru oraz ścięcia drzewka na plantacji", "Profesjonalne cięcie dostosowane do Twoich potrzeb", "Świeże drzewka, ścięte maksymalnie 48h przed odbiorem", "Pakowanie i zabezpieczenie choinki na czas transportu", "Porady dotyczące pielęgnacji i utrzymania świeżości"];
 const SeasonalInfo = () => {
-  return (
-    <section id="sezony" className="bg-forest-50 section-padding rounded-2xl">
+  return <section id="sezony" className="bg-forest-50 section-padding rounded-2xl">
       <div className="text-center mb-16">
-        <p className="text-forest-600 uppercase tracking-wider font-medium">Sezony i dostępność</p>
+        
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2">
           Kalendarz naszej plantacji
         </h2>
@@ -34,18 +36,12 @@ const SeasonalInfo = () => {
       <div className="mt-16 relative">
         <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-forest-300 transform -translate-x-1/2 hidden md:block" />
         
-        {seasonTimeline.map((item, index) => (
-          <div 
-            key={index} 
-            className={`flex flex-col md:flex-row md:items-center md:justify-between mb-10 md:mb-16 relative`}
-          >
+        {seasonTimeline.map((item, index) => <div key={index} className={`flex flex-col md:flex-row md:items-center md:justify-between mb-10 md:mb-16 relative`}>
             <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right' : 'md:order-2'}`}>
               <div className={`p-6 bg-white rounded-xl shadow-md inline-block card-hover ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
                 <h3 className="text-xl font-semibold text-forest-800 font-serif">{item.month}</h3>
                 <p className="mt-2 text-forest-700">{item.activity}</p>
-                {item.extraInfo && (
-                  <p className="mt-2 text-forest-800 font-bold">{item.extraInfo}</p>
-                )}
+                {item.extraInfo && <p className="mt-2 text-forest-800 font-bold">{item.extraInfo}</p>}
               </div>
             </div>
             
@@ -56,8 +52,7 @@ const SeasonalInfo = () => {
             </div>
             
             <div className={`w-full md:w-5/12 mt-4 md:mt-0 ${index % 2 === 0 ? 'md:order-2' : 'md:text-right'}`}>
-              {index === 1 && (
-                <div className="p-6 bg-gold-50 rounded-xl shadow-md inline-block md:-ml-16">
+              {index === 1 && <div className="p-6 bg-gold-50 rounded-xl shadow-md inline-block md:-ml-16">
                   <h4 className="text-lg font-semibold text-forest-800 font-serif flex items-center justify-center md:justify-end gap-2">
                     <Calendar size={18} className="text-gold-600" />
                     <span>Ważne daty</span>
@@ -65,11 +60,9 @@ const SeasonalInfo = () => {
                   <p className="mt-2 text-forest-700">
                     Sprzedaż choinek na stoisku rozpoczyna się 1 grudnia i trwa do Wigilii
                   </p>
-                </div>
-              )}
+                </div>}
             </div>
-          </div>
-        ))}
+          </div>)}
       </div>
 
       {/* Additional Info */}
@@ -79,14 +72,12 @@ const SeasonalInfo = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <ul className="space-y-3">
-              {perks.map((perk, index) => (
-                <li key={index} className="flex items-start gap-2">
+              {perks.map((perk, index) => <li key={index} className="flex items-start gap-2">
                   <span className="mt-1 text-forest-600">
                     <Check size={18} />
                   </span>
                   <span className="text-forest-700 text-justify">{perk}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
           
@@ -102,8 +93,6 @@ const SeasonalInfo = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SeasonalInfo;

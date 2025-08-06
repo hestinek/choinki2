@@ -1,13 +1,10 @@
-
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
-
 const Contact = () => {
-  return (
-    <section id="kontakt" className="section-padding">
+  return <section id="kontakt" className="section-padding">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Contact Info */}
         <div className="opacity-0 animate-slide-in-left">
-          <p className="text-forest-600 uppercase tracking-wider font-medium">Skontaktuj się z nami</p>
+          
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-3">
             Jesteśmy do Twojej dyspozycji
           </h2>
@@ -82,16 +79,9 @@ const Contact = () => {
           </h3>
           
           <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.123456789!2d21.234567!3d54.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSo%C5%82dany+28%2C+11-500+So%C5%82dany!5e0!3m2!1spl!2spl!4v1234567890"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa dojazdu do plantacji choinek"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.123456789!2d21.234567!3d54.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSo%C5%82dany+28%2C+11-500+So%C5%82dany!5e0!3m2!1spl!2spl!4v1234567890" width="100%" height="100%" style={{
+            border: 0
+          }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mapa dojazdu do plantacji choinek"></iframe>
           </div>
           
           <div className="mt-4 text-forest-600 text-sm space-y-3">
@@ -106,8 +96,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
