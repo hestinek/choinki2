@@ -36,12 +36,24 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-forest-50 overflow-x-hidden">
       <Navbar />
-      <Hero />
-      <TreeVarieties />
-      <AboutFarm />
-      <Gallery />
-      <SeasonalInfo />
-      <Contact />
+      <div className="section-transition section-enter">
+        <Hero />
+      </div>
+      <div className="section-transition section-enter">
+        <TreeVarieties />
+      </div>
+      <div className="section-transition section-enter">
+        <AboutFarm />
+      </div>
+      <div className="section-transition section-enter">
+        <Gallery />
+      </div>
+      <div className="section-transition section-enter">
+        <SeasonalInfo />
+      </div>
+      <div className="section-transition section-enter">
+        <Contact />
+      </div>
       <Footer />
       <CookieBanner />
     </div>
