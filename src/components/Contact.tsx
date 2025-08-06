@@ -1,6 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 const Contact = () => {
-  return <section id="kontakt" className="w-full bg-white py-16 md:py-24">
+  return <section id="kontakt" className="w-full bg-forest-50 py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Contact Info */}
