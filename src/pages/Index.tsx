@@ -15,25 +15,21 @@ const Index = () => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const section = entry.target as HTMLElement;
-          const animationType = section.dataset.animation || 'fade-in';
-          section.classList.add(`animate-${animationType}`);
-          section.classList.remove('section-hidden');
+          entry.target.classList.add('animate-fade-in');
         }
       });
     };
 
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
-      threshold: 0.15,
-      rootMargin: '-50px 0px',
+      threshold: 0.1,
     });
 
-    const sections = document.querySelectorAll('.section-transition');
-    sections.forEach(element => observer.observe(element));
+    const hiddenElements = document.querySelectorAll('.opacity-0');
+    hiddenElements.forEach(element => observer.observe(element));
 
     return () => {
-      sections.forEach(element => observer.unobserve(element));
+      hiddenElements.forEach(element => observer.unobserve(element));
     };
   }, []);
 
@@ -41,24 +37,12 @@ const Index = () => {
     <div className="min-h-screen bg-forest-50 overflow-x-hidden">
       <Navbar />
       <Hero />
-      <div className="section-transition section-hidden" data-animation="slide-up">
-        <TreeVarieties />
-      </div>
-      <div className="section-transition section-hidden" data-animation="fade-in">
-        <AboutFarm />
-      </div>
-      <div className="section-transition section-hidden" data-animation="zoom-in">
-        <Gallery />
-      </div>
-      <div className="section-transition section-hidden" data-animation="slide-in-left">
-        <SeasonalInfo />
-      </div>
-      <div className="section-transition section-hidden" data-animation="fade-in">
-        <Contact />
-      </div>
-      <div className="section-transition section-hidden" data-animation="slide-up">
-        <Footer />
-      </div>
+      <TreeVarieties />
+      <AboutFarm />
+      <Gallery />
+      <SeasonalInfo />
+      <Contact />
+      <Footer />
       <CookieBanner />
     </div>
   );
