@@ -36,7 +36,7 @@ const TreeVarieties = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
         {treeVarieties.map((tree, index) => <div key={tree.id} className={`bg-white rounded-xl overflow-hidden shadow-md card-hover opacity-0 ${index === 0 ? 'animate-fade-in' : index === 1 ? 'animate-fade-in-delay-1' : 'animate-fade-in-delay-2'}`}>
             <div className="h-80 overflow-hidden">
-              <img src={tree.image} alt={tree.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" width="400" height="320" />
+              <img src={tree.image} alt={tree.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" decoding="async" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" width="400" height="320" />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-forest-800 font-serif">{tree.name}</h3>

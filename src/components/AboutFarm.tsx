@@ -6,7 +6,7 @@ const AboutFarm = () => {
         {/* Image */}
         <div className="relative opacity-0 animate-slide-in-left">
           <div className="rounded-2xl overflow-hidden">
-            <img src="/lovable-uploads/40aa1e67-5cef-43c2-887e-841874b2b521.png" alt="Nasza plantacja choinek" className="w-full h-[500px] object-cover" loading="lazy" width="600" height="500" />
+            <img src="/lovable-uploads/40aa1e67-5cef-43c2-887e-841874b2b521.png" alt="Nasza plantacja choinek" className="w-full h-[500px] object-cover" loading="lazy" decoding="async" sizes="(min-width: 1024px) 600px, 100vw" width="600" height="500" />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg w-full max-w-xs opacity-0 animate-rotate-in">
             <div className="flex items-center gap-2">
