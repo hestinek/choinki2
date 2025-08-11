@@ -15,21 +15,25 @@ const Index = () => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-in');
+          const section = entry.target as HTMLElement;
+          const animationType = section.dataset.animation || 'fade-in';
+          section.classList.add(`animate-${animationType}`);
+          section.classList.remove('section-hidden');
         }
       });
     };
 
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
-      threshold: 0.1,
+      threshold: 0.15,
+      rootMargin: '-50px 0px',
     });
 
-    const hiddenElements = document.querySelectorAll('.opacity-0');
-    hiddenElements.forEach(element => observer.observe(element));
+    const sections = document.querySelectorAll('.section-transition');
+    sections.forEach(element => observer.observe(element));
 
     return () => {
-      hiddenElements.forEach(element => observer.unobserve(element));
+      sections.forEach(element => observer.unobserve(element));
     };
   }, []);
 
@@ -37,12 +41,24 @@ const Index = () => {
     <div className="min-h-screen bg-forest-50 overflow-x-hidden">
       <Navbar />
       <Hero />
-      <TreeVarieties />
-      <AboutFarm />
-      <Gallery />
-      <SeasonalInfo />
-      <Contact />
-      <Footer />
+      <div className="section-transition section-hidden" data-animation="slide-up">
+        <TreeVarieties />
+      </div>
+      <div className="section-transition section-hidden" data-animation="fade-in">
+        <AboutFarm />
+      </div>
+      <div className="section-transition section-hidden" data-animation="zoom-in">
+        <Gallery />
+      </div>
+      <div className="section-transition section-hidden" data-animation="slide-in-left">
+        <SeasonalInfo />
+      </div>
+      <div className="section-transition section-hidden" data-animation="fade-in">
+        <Contact />
+      </div>
+      <div className="section-transition section-hidden" data-animation="slide-up">
+        <Footer />
+      </div>
       <CookieBanner />
     </div>
   );
