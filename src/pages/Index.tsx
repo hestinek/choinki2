@@ -15,18 +15,17 @@ const Index = () => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.remove('section-hidden');
-          entry.target.classList.add('section-visible');
+          entry.target.classList.add('animate-fade-in');
         }
       });
     };
 
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
-      threshold: 0.15,
+      threshold: 0.1,
     });
 
-    const hiddenElements = document.querySelectorAll('.section-transition');
+    const hiddenElements = document.querySelectorAll('.opacity-0');
     hiddenElements.forEach(element => observer.observe(element));
 
     return () => {
@@ -35,27 +34,15 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-forest-50">
+    <div className="min-h-screen bg-forest-50 overflow-x-hidden">
       <Navbar />
       <Hero />
-      <div className="section-transition section-hidden">
-        <TreeVarieties />
-      </div>
-      <div className="section-transition section-hidden">
-        <AboutFarm />
-      </div>
-      <div className="section-transition section-hidden">
-        <Gallery />
-      </div>
-      <div className="section-transition section-hidden">
-        <SeasonalInfo />
-      </div>
-      <div className="section-transition section-hidden">
-        <Contact />
-      </div>
-      <div className="section-transition section-hidden">
-        <Footer />
-      </div>
+      <TreeVarieties />
+      <AboutFarm />
+      <Gallery />
+      <SeasonalInfo />
+      <Contact />
+      <Footer />
       <CookieBanner />
     </div>
   );

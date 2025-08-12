@@ -27,16 +27,16 @@ const TreeVarieties = () => {
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
       <div className="text-center mb-16">
         
-        <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl text-forest-900 font-bold mt-2 opacity-0 animate-fade-in-delay-1">
           Wybierz idealną choinkę
         </h2>
-        <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto">Każda z naszych choinek jest starannie pielęgnowana, aby zapewnić najwyższą jakość i wyjątkowe doznania w Twoim domu podczas świąt. <strong>Drzewka wycinamy przy klientach!</strong></p>
+        <p className="mt-4 text-lg text-forest-700/80 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">Każda z naszych choinek jest starannie pielęgnowana, aby zapewnić najwyższą jakość i wyjątkowe doznania w Twoim domu podczas świąt. <strong>Drzewka wycinamy przy klientach!</strong></p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-        {treeVarieties.map((tree, index) => <div key={tree.id} className="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+        {treeVarieties.map((tree, index) => <div key={tree.id} className={`bg-white rounded-xl overflow-hidden shadow-md card-hover opacity-0 ${index === 0 ? 'animate-fade-in' : index === 1 ? 'animate-fade-in-delay-1' : 'animate-fade-in-delay-2'}`}>
             <div className="h-80 overflow-hidden">
-              <img src={tree.image} alt={tree.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" width="400" height="320" />
+              <img src={tree.image} alt={tree.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" decoding="async" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" width="400" height="320" />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-forest-800 font-serif">{tree.name}</h3>
