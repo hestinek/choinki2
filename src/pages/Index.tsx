@@ -15,7 +15,8 @@ const Index = () => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-in');
+          const animation = entry.target.getAttribute('data-animation') || 'animate-fade-in';
+          entry.target.classList.add(animation);
         }
       });
     };
@@ -25,7 +26,7 @@ const Index = () => {
       threshold: 0.1,
     });
 
-    const hiddenElements = document.querySelectorAll('.opacity-0');
+    const hiddenElements = document.querySelectorAll('.section-transition');
     hiddenElements.forEach(element => observer.observe(element));
 
     return () => {
@@ -39,8 +40,12 @@ const Index = () => {
       <Hero />
       <TreeVarieties />
       <AboutFarm />
-      <Gallery />
-      <SeasonalInfo />
+      <div className="section-transition section-hidden" data-animation="animate-zoom-in">
+        <Gallery />
+      </div>
+      <div className="section-transition section-hidden" data-animation="animate-slide-in-left">
+        <SeasonalInfo />
+      </div>
       <Contact />
       <Footer />
       <CookieBanner />

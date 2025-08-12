@@ -140,6 +140,15 @@
   .animate-rotate-in {
     animation: rotate-in 0.7s ease-out;
   }
+
+  .section-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .section-transition {
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
 }
 
 @layer components {
