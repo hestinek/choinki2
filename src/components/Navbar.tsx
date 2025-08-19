@@ -24,9 +24,9 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/d44929bb-3690-47cf-a72f-bc863c3e8687.png" 
               alt="Choinki Giżycko Logo" 
-              className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              className="w-12 h-12 md:w-16 md:h-16 object-contain"
             />
-            <span className="hidden sm:inline">
+            <span>
               Choinki<span className="text-forest-600">Giżycko</span>
             </span>
           </a>
