@@ -19,7 +19,7 @@ const Gallery = () => {
     src: "/lovable-uploads/eac0c5d4-a542-4675-8532-777597e3b650.png",
     alt: "Plantacja choinek w mglisty poranek"
   }];
-  return <section id="drzewka" className="w-full bg-forest-50 py-16 md:py-24">
+  return <section id="drzewka" className="w-full bg-forest-50 py-16 md:py-24 opacity-0 section-transition">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
       <div className="text-center mb-12">
         
