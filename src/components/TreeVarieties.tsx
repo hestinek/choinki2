@@ -5,6 +5,7 @@ const treeVarieties = [{
   description: 'Kwintesencja polskich świąt. Intensywny zapach, gęste gałęzie i tradycyjny wygląd.',
   height: '1.5m - 3m',
   characteristics: ['Intensywny zapach', 'Gęste igły', 'Klasyczny wybór'],
+  webp: '/lovable-uploads/5fcd4a52-d9bf-4cf6-94bd-bb4574290e3d.webp',
   image: '/lovable-uploads/5fcd4a52-d9bf-4cf6-94bd-bb4574290e3d.png'
 }, {
   id: 2,
@@ -12,6 +13,7 @@ const treeVarieties = [{
   description: 'Praktyczne rozwiązanie, drzewko z systemem korzeniowym. Po świętach idealne do ogrodu.',
   height: '1m – 1.7m',
   characteristics: ['Możliwość posadzenia po świętach', 'Zachowana świeżość', 'Ekologiczny wybór'],
+  webp: '/lovable-uploads/6ca30e93-1b8b-411a-87a7-521e5f9c140a.webp',
   image: '/lovable-uploads/6ca30e93-1b8b-411a-87a7-521e5f9c140a.png'
 }, {
   id: 3,
@@ -19,6 +21,7 @@ const treeVarieties = [{
   description: 'Wyjątkowy niebieskawy odcień igieł, sztywne gałęzie, idealny do ciężkich ozdób.',
   height: '1.5m - 3m',
   characteristics: ['Subtelny zapach', 'Srebrzyste igły', 'Większa trwałość'],
+  webp: '/lovable-uploads/57dda738-0b4f-42a7-9e01-86960103fda2.webp',
   image: '/lovable-uploads/57dda738-0b4f-42a7-9e01-86960103fda2.png'
 }];
 const TreeVarieties = () => {
@@ -36,7 +39,10 @@ const TreeVarieties = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
         {treeVarieties.map((tree, index) => <div key={tree.id} className={`bg-white rounded-xl overflow-hidden shadow-md card-hover opacity-0 ${index === 0 ? 'animate-fade-in' : index === 1 ? 'animate-fade-in-delay-1' : 'animate-fade-in-delay-2'}`}>
             <div className="h-80 overflow-hidden">
-              <img src={tree.image} alt={tree.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" decoding="async" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" width="400" height="320" />
+              <picture>
+                <source srcSet={tree.webp} type="image/webp" />
+                <img src={tree.image} alt={tree.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" decoding="async" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" width="400" height="320" />
+              </picture>
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-forest-800 font-serif">{tree.name}</h3>

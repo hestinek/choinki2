@@ -1,21 +1,27 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 const Gallery = () => {
   const images = [{
+    webp: "/lovable-uploads/02d66d00-771c-490d-94f4-de138ccec901.webp",
     src: "/lovable-uploads/02d66d00-771c-490d-94f4-de138ccec901.png",
     alt: "Choinki na plantacji"
   }, {
+    webp: "/lovable-uploads/297ea240-18e9-4aa6-b3ff-77bcb89fe24c.webp",
     src: "/lovable-uploads/297ea240-18e9-4aa6-b3ff-77bcb89fe24c.png",
     alt: "Rzędy choinek w złotym świetle"
   }, {
+    webp: "/lovable-uploads/58c46bc0-3626-473b-ad17-0bcbb16baad1.webp",
     src: "/lovable-uploads/58c46bc0-3626-473b-ad17-0bcbb16baad1.png",
     alt: "Choinki w delikatnym świetle"
   }, {
+    webp: "/lovable-uploads/6abac2b8-e062-49cf-80af-c8fcc36908ce.webp",
     src: "/lovable-uploads/6abac2b8-e062-49cf-80af-c8fcc36908ce.png",
     alt: "Pojedyncza choinka na plantacji"
   }, {
+    webp: "/lovable-uploads/e0515892-02bb-4b7c-a8a8-364603a3e361.webp",
     src: "/lovable-uploads/e0515892-02bb-4b7c-a8a8-364603a3e361.png",
     alt: "Młoda choinka w złotym świetle"
   }, {
+    webp: "/lovable-uploads/eac0c5d4-a542-4675-8532-777597e3b650.webp",
     src: "/lovable-uploads/eac0c5d4-a542-4675-8532-777597e3b650.png",
     alt: "Plantacja choinek w mglisty poranek"
   }];
@@ -40,7 +46,10 @@ const Gallery = () => {
             {images.map((image, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="aspect-[3/4] overflow-hidden">
-                    <img src={image.src} alt={image.alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" width="600" height="800" />
+                    <picture>
+                      <source srcSet={image.webp} type="image/webp" />
+                      <img src={image.src} alt={image.alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" width="600" height="800" />
+                    </picture>
                   </div>
                 </div>
               </CarouselItem>)}
