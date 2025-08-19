@@ -20,15 +20,8 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
       <div className="container mx-auto px-6 md:px-12">
         <div className="bg-gray-200/40 backdrop-blur-sm shadow-sm rounded-3xl px-6 py-4 flex justify-between items-center">
-          <a href="/" className="font-serif text-2xl font-bold text-forest-800 flex items-center gap-3">
-            <img 
-              src="/lovable-uploads/d44929bb-3690-47cf-a72f-bc863c3e8687.png" 
-              alt="Choinki Giżycko Logo" 
-              className="w-12 h-12 md:w-16 md:h-16 object-contain"
-            />
-            <span>
-              Choinki<span className="text-forest-600">Giżycko</span>
-            </span>
+          <a href="/" className="font-serif text-2xl font-bold text-forest-800 flex items-center">
+            Choinki<span className="text-forest-600">Giżycko</span>
           </a>
           
           {/* Desktop Menu */}
