@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="bg-gray-200/40 backdrop-blur-sm shadow-sm rounded-3xl px-6 py-4 flex justify-between items-center">
           <a href="/" className="font-serif text-2xl font-bold text-forest-800 flex items-center">
-            Choinki<span className="text-forest-600">Giżycko</span>
+            PlantacjaSoldany
           </a>
           
           {/* Desktop Menu */}
