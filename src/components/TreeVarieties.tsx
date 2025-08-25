@@ -26,7 +26,7 @@ const treeVarieties = [{
 }];
 const TreeVarieties = () => {
   const [selectedTree, setSelectedTree] = useState<number | null>(null);
-  return <section id="odmiany" className="w-full bg-forest-50 py-16 md:py-24">
+  return <section id="odmiany" className="w-full bg-forest-50 py-16 md:py-24 opacity-0">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
       <div className="text-center mb-16">
         
