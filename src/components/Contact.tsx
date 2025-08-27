@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="mt-8 space-y-5">
             <div className="flex items-start gap-4">
               <div className="bg-forest-100 p-3 rounded-full text-forest-600">
-                <MapPin size={20} />
+                <MapPin size={20} aria-hidden="true" />
               </div>
               <div>
                 <h3 className="font-medium text-forest-800 text-lg">Adres plantacji</h3>
@@ -32,7 +32,7 @@ const Contact = () => {
             
             <div className="flex items-start gap-4">
               <div className="bg-forest-100 p-3 rounded-full text-forest-600">
-                <Phone size={20} />
+                <Phone size={20} aria-hidden="true" />
               </div>
               <div>
                 <h3 className="font-medium text-forest-800 text-lg">Telefon</h3>
@@ -44,7 +44,7 @@ const Contact = () => {
             
             <div className="flex items-start gap-4">
               <div className="bg-forest-100 p-3 rounded-full text-forest-600">
-                <Mail size={20} />
+                <Mail size={20} aria-hidden="true" />
               </div>
               <div>
                 <h3 className="font-medium text-forest-800 text-lg">Email</h3>
@@ -56,7 +56,7 @@ const Contact = () => {
             
             <div className="flex items-start gap-4">
               <div className="bg-forest-100 p-3 rounded-full text-forest-600">
-                <Clock size={20} />
+                <Clock size={20} aria-hidden="true" />
               </div>
               <div>
                 <h3 className="font-medium text-forest-800 text-lg">Godziny otwarcia</h3>

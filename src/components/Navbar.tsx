@@ -27,9 +27,13 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {['Strona główna', 'Odmiany', 'O nas', 'Drzewka', 'Sezony', 'Kontakt'].map((item) => (
-              <a 
-                key={item} 
-                href={`/${item.toLowerCase().replace(' ', '-') === 'strona-główna' ? '' : `#${item.toLowerCase().replace(' ', '-')}`}`}
+              <a
+                key={item}
+                href={
+                  item.toLowerCase().replace(' ', '-') === 'strona-główna'
+                    ? '/'
+                    : `#${item.toLowerCase().replace(' ', '-')}`
+                }
                 className="text-forest-700 hover:text-forest-500 transition-colors font-bold"
               >
                 {item}
@@ -38,9 +42,10 @@ const Navbar = () => {
           </div>
           
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden text-forest-700"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? 'Zamknij menu' : 'Otwórz menu'}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -50,12 +55,16 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <div className="md:hidden bg-gray-200/40 backdrop-blur-sm rounded-3xl shadow-md mt-2 px-4 py-3">
             {['Strona główna', 'Odmiany', 'O nas', 'Drzewka', 'Sezony', 'Kontakt'].map((item) => (
-              <a 
-                key={item} 
-                href={`/${item.toLowerCase().replace(' ', '-') === 'strona-główna' ? '' : `#${item.toLowerCase().replace(' ', '-')}`}`}
-                className="block text-forest-700 hover:text-forest-500 transition-colors font-bold py-2 px-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
+                <a
+                  key={item}
+                  href={
+                    item.toLowerCase().replace(' ', '-') === 'strona-główna'
+                      ? '/'
+                      : `#${item.toLowerCase().replace(' ', '-')}`
+                  }
+                  className="block text-forest-700 hover:text-forest-500 transition-colors font-bold py-2 px-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                 {item}
               </a>
             ))}
