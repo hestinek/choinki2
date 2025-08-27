@@ -42,9 +42,10 @@ const CookieBanner = () => {
               </Button>
             </div>
           </div>
-          <button 
+          <button
             onClick={closeBanner}
             className="text-forest-600 hover:text-forest-800 transition-colors"
+            aria-label="Zamknij baner cookies"
           >
             <X size={16} />
           </button>
